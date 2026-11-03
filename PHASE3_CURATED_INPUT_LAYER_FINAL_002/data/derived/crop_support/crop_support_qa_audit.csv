@@ -1,0 +1,23 @@
+check_name,status,severity,value,expected,details
+required_columns_present,PASS,fatal,none,none,
+target_years_present,PASS,fatal,"[2011, 2015, 2017, 2023]","[2011, 2015, 2017, 2023]",
+expected_object_count,PASS,warning,1184,1184,
+duplicate_object_year_rows,PASS,fatal,0,0,
+complete_object_year_matrix,PASS,fatal,4736,4736,
+year_count_per_object_equals_target_year_count,PASS,fatal,0,0,
+county_assignment_constant,PASS,fatal,0,0,
+object_area_positive,PASS,fatal,0,0,
+object_area_constant_across_years,PASS,warning,0,0,tolerance_ha=1e-06
+corn_area_not_greater_than_fixed_object_area,PASS,fatal,0,0,
+supported_corn_area_not_greater_than_fixed_object_area,PASS,fatal,0,0,
+supported_corn_area_not_greater_than_corn_area,PASS,fatal,0,0,
+missing_core_values,PASS,fatal,0,0,
+domain_2011_area_weighted_corn_fraction_near_1,PASS,warning,1.000000,>=0.99,
+corn_fraction_raw_not_above_1,PASS,warning,0,0,epsilon=1e-06
+primary_input_sha256,PASS,info,c23f684857ee0e95233c76afd2e4572a9ff5ed6b4236b413c923ff106328e2b0,recorded,
+primary_input_path,PASS,info,source://v47b1_raster_object_level_summary.csv,recorded,
+local_raster_inventory_present,PASS,info,source://v47b1_local_raster_inventory.csv,present,
+raster_inventory_row_count,PASS,info,24,recorded,
+raster_read_success,PASS,info,0,0,failed read_success rows
+missing_required_raster_bands,PASS,info,0,0,rows with non-empty missing_required_bands
+october_bands_absent,PASS,info,0,0,October should not be part of retained S4 manuscript season.

@@ -1,0 +1,12 @@
+{
+  "tables_s1_s3": "STRUCTURED_AND_FROZEN",
+  "source_document": "Supp_Material.docx",
+  "source_sha256": "90612b0bff3a40c2a7a32e3df5c8822a75a833b6ada109aa843e554bbd13936f",
+  "supplementary_methods_s1": "AVAILABLE",
+  "release_status": "CONDITIONAL_PENDING_COAUTHOR_APPROVAL_AND_REMAINING_REPOSITORY_GAPS",
+  "s1_source_basis": "team-review manuscript Section 3.10 plus V51 iterative solver and ACES strict-mask script",
+  "s1_technical_reconciliation": "PASS",
+  "s1_prose_review": "PASS_DECLARATIVE_STYLE",
+  "coauthor_scientific_approval": "PENDING",
+  "combined_supplement_docx": "Supplementary_Material_COMPLETE.docx"
+}

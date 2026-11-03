@@ -1,0 +1,129 @@
+{
+  "branch_name": "V47B2_FIXED2011_CDL_SUPPORT_QA",
+  "created_utc": "2026-06-17T17:29:28Z",
+  "purpose": "Fixed 2011 retained-object CDL/corn-support QA for manuscript Section 4.5.",
+  "interpretation_boundary": "No pumping estimate, no withdrawal validation, no ET validation, no METRIC correction, no year-specific object generation.",
+  "input_root": "source://4_data_output_clean_objects_full",
+  "zip_extraction_dir": null,
+  "primary_input": "source://v47b1_raster_object_level_summary.csv",
+  "primary_input_sha256": "c23f684857ee0e95233c76afd2e4572a9ff5ed6b4236b413c923ff106328e2b0",
+  "target_years": [
+    2011,
+    2015,
+    2017,
+    2023
+  ],
+  "thresholds": [
+    0.5,
+    0.7,
+    0.9
+  ],
+  "primary_threshold": 0.7,
+  "expected_object_count": 1184,
+  "outputs": {
+    "v47b2_fixed2011_cdl_support_qa_object_year_support.csv": "source://v47b2_fixed2011_cdl_support_qa_object_year_support.csv",
+    "v47b2_fixed2011_cdl_support_qa_county_year_support.csv": "source://v47b2_fixed2011_cdl_support_qa_county_year_support.csv",
+    "v47b2_fixed2011_cdl_support_qa_threshold_summary.csv": "source://v47b2_fixed2011_cdl_support_qa_threshold_summary.csv",
+    "v47b2_fixed2011_cdl_support_qa_persistence_summary.csv": "source://v47b2_fixed2011_cdl_support_qa_persistence_summary.csv",
+    "v47b2_fixed2011_cdl_support_qa_fraction_quantiles.csv": "source://v47b2_fixed2011_cdl_support_qa_fraction_quantiles.csv",
+    "v47b2_fixed2011_cdl_support_qa_persistence_transition_classes.csv": "source://v47b2_fixed2011_cdl_support_qa_persistence_transition_classes.csv",
+    "v47b2_fixed2011_cdl_support_qa_QA_audit.csv": "source://v47b2_fixed2011_cdl_support_qa_QA_audit.csv",
+    "v47b2_fixed2011_cdl_support_qa_raster_band_evidence.csv": "source://v47b2_fixed2011_cdl_support_qa_raster_band_evidence.csv",
+    "v47b2_fixed2011_cdl_support_qa_methods_note.md": "source://v47b2_fixed2011_cdl_support_qa_methods_note.md",
+    "v47b2_fixed2011_cdl_support_qa_QA_report.md": "source://v47b2_fixed2011_cdl_support_qa_QA_report.md",
+    "v47b2_fixed2011_cdl_support_qa_QA_preview_not_manuscript.png": "source://v47b2_fixed2011_cdl_support_qa_QA_preview_not_manuscript.png"
+  },
+  "qa_status_counts": {
+    "PASS": 22
+  },
+  "fatal_or_failed_checks": [
+    {
+      "check_name": "required_columns_present",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": "none",
+      "expected": "none",
+      "details": ""
+    },
+    {
+      "check_name": "target_years_present",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": "[2011, 2015, 2017, 2023]",
+      "expected": "[2011, 2015, 2017, 2023]",
+      "details": ""
+    },
+    {
+      "check_name": "duplicate_object_year_rows",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": 0,
+      "expected": 0,
+      "details": ""
+    },
+    {
+      "check_name": "complete_object_year_matrix",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": 4736,
+      "expected": 4736,
+      "details": ""
+    },
+    {
+      "check_name": "year_count_per_object_equals_target_year_count",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": 0,
+      "expected": 0,
+      "details": ""
+    },
+    {
+      "check_name": "county_assignment_constant",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": 0,
+      "expected": 0,
+      "details": ""
+    },
+    {
+      "check_name": "object_area_positive",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": 0,
+      "expected": 0,
+      "details": ""
+    },
+    {
+      "check_name": "corn_area_not_greater_than_fixed_object_area",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": 0,
+      "expected": 0,
+      "details": ""
+    },
+    {
+      "check_name": "supported_corn_area_not_greater_than_fixed_object_area",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": 0,
+      "expected": 0,
+      "details": ""
+    },
+    {
+      "check_name": "supported_corn_area_not_greater_than_corn_area",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": 0,
+      "expected": 0,
+      "details": ""
+    },
+    {
+      "check_name": "missing_core_values",
+      "status": "PASS",
+      "severity": "fatal",
+      "value": 0,
+      "expected": 0,
+      "details": ""
+    }
+  ]
+}

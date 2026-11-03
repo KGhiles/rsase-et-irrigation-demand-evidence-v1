@@ -1,0 +1,8 @@
+gate,acceptance_rule
+Domain overlap,"Scene footprint overlapped the four-county domain by >= 200 km2 with >= 50,000 anchor-scale pixels."
+Clear and valid data,Clear-pixel fraction >= 0.10; valid surface-temperature and net-radiation fractions each >= 0.05.
+Image-date weather forcing,NLDAS forcing available and physically usable; reference ET used in the solve was positive.
+Hot/cold anchor pools,"Cold candidates met crop and vegetation support; hot candidates met dry, bright bare or non-crop criteria; both pools met minimum candidate counts."
+Thermal separation,"Hot reference exceeded cold reference and met the V35 contextual threshold: 6.5 K baseline, +1.0 K for weak hot-anchor support, +0.5 K for low clear-pixel support."
+METRIC solve plausibility,">= 2,000 solved pixels; mean r_ah 20-2000 s m-1; mean ETrF between -0.05 and 1.2; low/high ETrF clamp fractions <= 0.10; aerodynamic cap-hit fraction <= 0.05."
+Final acceptance,Scene retained only when all preceding gates passed.

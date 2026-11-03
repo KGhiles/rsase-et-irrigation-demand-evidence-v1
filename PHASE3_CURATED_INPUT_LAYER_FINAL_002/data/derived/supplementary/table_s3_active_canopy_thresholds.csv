@@ -1,0 +1,4 @@
+diagnostic_class,seasonal_window,canopy_condition,energy_balance_condition,crop_water_use_envelope
+Early weak-canopy sensitivity,May-June,NDVI < 0.25 or LAI < 0.75; active-canopy condition not satisfied,ETrF >= 0.85; corn-supported accepted-valid ETrF; ETa exceeds envelope,ETa exceeds envelope
+Peak active-canopy sensitivity,June-August,NDVI >= 0.50 and LAI >= 2.00,ETrF >= 0.90; thermal position <= 0.15; H <= 25 W m-2; LE/Rn >= 0.90; ETa exceeds envelope,ETa exceeds envelope
+Union class,May-August,Meets either early weak-canopy or peak active-canopy criteria,Meets either diagnostic condition,Union of the two diagnostic classes

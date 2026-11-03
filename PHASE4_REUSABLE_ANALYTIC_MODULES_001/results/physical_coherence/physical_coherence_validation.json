@@ -1,0 +1,87 @@
+{
+  "module": "physical_coherence",
+  "status": "PASS",
+  "checks": 10,
+  "passed": 10,
+  "failed": 0,
+  "standard_deviation": {
+    "type": "sample standard deviation",
+    "ddof": 1,
+    "basis": "eight targeted active-canopy 2011 scenes",
+    "interpretation": "descriptive scene-to-scene spread, not product uncertainty"
+  },
+  "figure_change": false,
+  "scientific_boundary": "internal physical-coherence evidence only; no ET validation, corrected ET, irrigation, pumping, or groundwater-source inference",
+  "check_results": [
+    {
+      "check_id": "PHYS-001",
+      "description": "Phase 3 runtime input validation",
+      "status": "PASS",
+      "observed": "PASS",
+      "expected": "PASS"
+    },
+    {
+      "check_id": "PHYS-002",
+      "description": "Scene-fingerprint rows",
+      "status": "PASS",
+      "observed": 6,
+      "expected": 6
+    },
+    {
+      "check_id": "PHYS-003",
+      "description": "Mechanism-source rows",
+      "status": "PASS",
+      "observed": 12,
+      "expected": 12
+    },
+    {
+      "check_id": "PHYS-004",
+      "description": "Active mechanism rows",
+      "status": "PASS",
+      "observed": 8,
+      "expected": 8
+    },
+    {
+      "check_id": "PHYS-005",
+      "description": "Spatial-source rows",
+      "status": "PASS",
+      "observed": 8,
+      "expected": 8
+    },
+    {
+      "check_id": "PHYS-006",
+      "description": "Text-statistic rows",
+      "status": "PASS",
+      "observed": 13,
+      "expected": 13
+    },
+    {
+      "check_id": "PHYS-007",
+      "description": "All sample SD values finite and non-negative",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check_id": "PHYS-008",
+      "description": "Standard-deviation convention",
+      "status": "PASS",
+      "observed": 1,
+      "expected": 1
+    },
+    {
+      "check_id": "PHYS-009",
+      "description": "Figure 3 design remains unchanged",
+      "status": "PASS",
+      "observed": "no plotting code; SD values stored separately",
+      "expected": "no figure change"
+    },
+    {
+      "check_id": "PHYS-010",
+      "description": "Scientific interpretation boundary",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    }
+  ]
+}

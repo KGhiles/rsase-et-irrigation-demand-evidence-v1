@@ -1,0 +1,93 @@
+{
+  "authorized_inputs": {
+    "data/derived/crop_support/county_year_crop_support.csv": {
+      "sha256": "88103fc1852d9e38efc3870d805908be2abcee417d83616ee38b975a6be8dc64"
+    },
+    "data/derived/crop_support/domain_year_crop_support.csv": {
+      "sha256": "fa136001045f44206e51f2912053096b7b8f11bd2aa78aeb591879c30780213f"
+    },
+    "data/derived/crop_support/fixed_frame_object_year_crop_support.csv": {
+      "sha256": "528854d42a191ffa0bd96ace61b3f3b00f8d8ef08996be960d14ec23e712f4de"
+    }
+  },
+  "command_template": [
+    "python",
+    "-m",
+    "qstable_awm.crop_support",
+    "--phase3-root",
+    "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "--output-dir",
+    "results/crop_support",
+    "--contract",
+    "config/phase4_source_contract.yml"
+  ],
+  "contract_relative_path": "config/phase4_source_contract.yml",
+  "contract_sha256": "b701177f25c7c758e50880bbf63901ba95d0d1e4bc7dc03d7af4038e4e8ff725",
+  "derived_output_validation": {
+    "checks": 26,
+    "failed": 0,
+    "passed": 26,
+    "status": "PASS",
+    "warnings": 0
+  },
+  "determinism_note": "Numerical outputs derive only from frozen Phase 3 tables; rows and columns are explicitly sorted.",
+  "figure_change": false,
+  "module": "crop_support",
+  "module_relative_path": "src/qstable_awm/crop_support.py",
+  "module_sha256": "bdcd46573985ebe923136e15fa96599675b581c3470f5234f8c5218196bac0b9",
+  "outputs": {
+    "crop_support_text_statistics.csv": {
+      "sha256": "504554f4b3e38f6866dbca9179c3eedccf9e0228bd58828c512d8fd6d8c8b7b2",
+      "size_bytes": 7732
+    },
+    "crop_support_validation.json": {
+      "sha256": "14794f8caaacfffe2f063b34b51240740f288a04111d254a6a28f03983d8a805",
+      "size_bytes": 8120
+    },
+    "figure5_county_crop_support_source.csv": {
+      "sha256": "61b06815f7381aed81724ac6c21564def8efeb23d5f8114640dcbeea32109628",
+      "size_bytes": 7989
+    },
+    "figure5_domain_crop_support_source.csv": {
+      "sha256": "fbd2abdd86a6953647898ed11c35b07195e72f51826a81aef57ec551785010a3",
+      "size_bytes": 2074
+    }
+  },
+  "phase3_package": "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+  "record_version": "1.0.0",
+  "runtime_input_validation": {
+    "checks": 214,
+    "failed": 0,
+    "modules": [
+      "crop_support"
+    ],
+    "passed": 214,
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "scientific_boundary": "Crop-support QA only; fixed-frame comparability only; no ET validation; no pumping estimate; no withdrawal validation; no groundwater attribution; no year-specific object creation; crop fraction is not a direct ET correction factor.",
+  "statistical_decisions": {
+    "county": {
+      "ddof": 1,
+      "n_per_year": 4,
+      "observational_unit": "county",
+      "type": "sample standard deviation"
+    },
+    "object_area_weighted": {
+      "ddof": 0,
+      "formula": "sqrt(sum(w*(x-mean_w)^2)/sum(w))",
+      "n_per_year": 1184,
+      "observational_unit": "fixed-frame object",
+      "type": "population-style weighted dispersion",
+      "weights": "fixed_2011_object_area_ha"
+    },
+    "object_unweighted": {
+      "ddof": 1,
+      "n_per_year": 1184,
+      "observational_unit": "fixed-frame object",
+      "role": "secondary diagnostic",
+      "type": "sample standard deviation"
+    }
+  }
+}

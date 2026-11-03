@@ -1,0 +1,9 @@
+county,month,max_abs_dETf_mean,month_label,crop,year,diagnostic_limit_abs_dETf,below_diagnostic_limit
+DALLAM,7,0.0013335469297229,July,corn,2011,0.01,True
+DALLAM,8,0.0007329390588052,August,corn,2011,0.01,True
+HARTLEY,7,0.0013466077548521,July,corn,2011,0.01,True
+HARTLEY,8,0.0009886205367272,August,corn,2011,0.01,True
+MOORE,7,0.0028159654942839,July,corn,2011,0.01,True
+MOORE,8,0.0029484327875645,August,corn,2011,0.01,True
+OCHILTREE,7,0.001502378741381,July,corn,2011,0.01,True
+OCHILTREE,8,0.0060984693236338,August,corn,2011,0.01,True

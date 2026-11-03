@@ -1,0 +1,590 @@
+{
+  "accepted_population": {
+    "county_radius_raster_counts": {
+      "MOORE_1000m": 12,
+      "MOORE_3000m": 18,
+      "OCHILTREE_1000m": 4,
+      "OCHILTREE_3000m": 5
+    },
+    "county_raster_counts": {
+      "MOORE": 30,
+      "OCHILTREE": 9
+    },
+    "same_date_source_only": true,
+    "source_radii_m": [
+      1000,
+      3000
+    ],
+    "strict_rasters": 39
+  },
+  "check_results": [
+    {
+      "check_id": "KC-001",
+      "description": "Runtime-input validation status",
+      "expected": "PASS",
+      "observed": "PASS",
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-002",
+      "description": "Runtime-input validation failures",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-003",
+      "description": "Strict raster count",
+      "expected": 39,
+      "observed": 39,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-004",
+      "description": "County raster counts",
+      "expected": {
+        "MOORE": 30,
+        "OCHILTREE": 9
+      },
+      "observed": {
+        "MOORE": 30,
+        "OCHILTREE": 9
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-005",
+      "description": "County-radius raster counts",
+      "expected": {
+        "MOORE_1000m": 12,
+        "MOORE_3000m": 18,
+        "OCHILTREE_1000m": 4,
+        "OCHILTREE_3000m": 5
+      },
+      "observed": {
+        "MOORE_1000m": 12,
+        "MOORE_3000m": 18,
+        "OCHILTREE_1000m": 4,
+        "OCHILTREE_3000m": 5
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-006",
+      "description": "Every raster is readable",
+      "expected": 39,
+      "observed": 39,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-007",
+      "description": "Every raster passes hierarchy",
+      "expected": 39,
+      "observed": 39,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-008",
+      "description": "Nested mask hierarchy",
+      "expected": 39,
+      "observed": 39,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-009",
+      "description": "Processing-funnel rows",
+      "expected": 4,
+      "observed": 4,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-010",
+      "description": "Processing-funnel counts",
+      "expected": [
+        39,
+        39,
+        39,
+        39
+      ],
+      "observed": [
+        39,
+        39,
+        39,
+        39
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-011",
+      "description": "County-radius source rows",
+      "expected": 4,
+      "observed": 4,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-012",
+      "description": "Mask-response source rows",
+      "expected": 16,
+      "observed": 16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-013",
+      "description": "Mask-response keys are unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-014",
+      "description": "Text-statistics rows",
+      "expected": 14,
+      "observed": 14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-015",
+      "description": "Text-statistics definitions are complete",
+      "expected": [],
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-016",
+      "description": "All text statistics use ddof=1",
+      "expected": [
+        1
+      ],
+      "observed": [
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-017",
+      "description": "Primary response SD uses four county-radius groups",
+      "expected": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "observed": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-018",
+      "description": "Secondary raster SD uses non-null strict records",
+      "expected": {
+        "active_canopy": 39,
+        "large_ETrF": 39,
+        "mechanism_evidence": 38,
+        "valid_output": 39
+      },
+      "observed": {
+        "active_canopy": 39,
+        "large_ETrF": 39,
+        "mechanism_evidence": 38,
+        "valid_output": 39
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-019",
+      "description": "Valid-output response range rounds to manuscript source",
+      "expected": [
+        0.86,
+        1.04
+      ],
+      "observed": [
+        0.86,
+        1.04
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-020",
+      "description": "Active-canopy response range rounds to manuscript source",
+      "expected": [
+        2.91,
+        3.92
+      ],
+      "observed": [
+        2.91,
+        3.92
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-021",
+      "description": "Large-ETrF response range rounds to manuscript source",
+      "expected": [
+        1.99,
+        2.81
+      ],
+      "observed": [
+        1.99,
+        2.81
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-022",
+      "description": "Mechanism response range rounds to manuscript source",
+      "expected": [
+        1.48,
+        2.21
+      ],
+      "observed": [
+        1.48,
+        2.21
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-023",
+      "description": "MOORE 1000 m valid_output response derives from raster medians",
+      "expected": 1.040242612361908,
+      "observed": 1.040242612361908,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-024",
+      "description": "MOORE 3000 m valid_output response derives from raster medians",
+      "expected": 0.8618480265140533,
+      "observed": 0.8618480265140533,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-025",
+      "description": "OCHILTREE 1000 m valid_output response derives from raster medians",
+      "expected": 1.0419633388519287,
+      "observed": 1.0419633388519287,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-026",
+      "description": "OCHILTREE 3000 m valid_output response derives from raster medians",
+      "expected": 1.0373782515525818,
+      "observed": 1.0373782515525818,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-027",
+      "description": "MOORE 1000 m active_canopy response derives from raster medians",
+      "expected": 3.377700984477997,
+      "observed": 3.377700984477997,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-028",
+      "description": "MOORE 3000 m active_canopy response derives from raster medians",
+      "expected": 3.9198991656303406,
+      "observed": 3.9198991656303406,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-029",
+      "description": "OCHILTREE 1000 m active_canopy response derives from raster medians",
+      "expected": 2.9132819175720215,
+      "observed": 2.9132819175720215,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-030",
+      "description": "OCHILTREE 3000 m active_canopy response derives from raster medians",
+      "expected": 2.9143993854522705,
+      "observed": 2.9143993854522705,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-031",
+      "description": "MOORE 1000 m large_ETrF response derives from raster medians",
+      "expected": 2.812928080558777,
+      "observed": 2.812928080558777,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-032",
+      "description": "MOORE 3000 m large_ETrF response derives from raster medians",
+      "expected": 2.2738720774650574,
+      "observed": 2.2738720774650574,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-033",
+      "description": "OCHILTREE 1000 m large_ETrF response derives from raster medians",
+      "expected": 2.4977356791496277,
+      "observed": 2.4977356791496277,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-034",
+      "description": "OCHILTREE 3000 m large_ETrF response derives from raster medians",
+      "expected": 1.9855144023895264,
+      "observed": 1.9855144023895264,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-035",
+      "description": "MOORE 1000 m mechanism_evidence response derives from raster medians",
+      "expected": 2.2084786891937256,
+      "observed": 2.2084786891937256,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-036",
+      "description": "MOORE 3000 m mechanism_evidence response derives from raster medians",
+      "expected": 1.4783296585083008,
+      "observed": 1.4783296585083008,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-037",
+      "description": "OCHILTREE 1000 m mechanism_evidence response derives from raster medians",
+      "expected": 1.6471348404884338,
+      "observed": 1.6471348404884338,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-038",
+      "description": "OCHILTREE 3000 m mechanism_evidence response derives from raster medians",
+      "expected": 1.8970860242843628,
+      "observed": 1.8970860242843628,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-039",
+      "description": "Nonconvergence is zero in all county-radius groups",
+      "expected": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-040",
+      "description": "Aerodynamic-resistance cap hits are zero",
+      "expected": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-041",
+      "description": "High-ETrF clamp range rounds to accepted QA",
+      "expected": [
+        0.21,
+        0.77
+      ],
+      "observed": [
+        0.21,
+        0.77
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-042",
+      "description": "Low-ETrF clamp range rounds to accepted QA",
+      "expected": [
+        0.96,
+        1.36
+      ],
+      "observed": [
+        0.96,
+        1.36
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-043",
+      "description": "Every group median thermal gap exceeds 6.5 K",
+      "expected": ">= 6.5",
+      "observed": 22.717385292053223,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-044",
+      "description": "Every strict raster has at least 30 source pixels",
+      "expected": ">= 30",
+      "observed": 54.34901809692383,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-045",
+      "description": "MOORE 3000 m source support exceeds 1000 m",
+      "expected": "3000 m > 1000 m",
+      "observed": {
+        "1000": 460.7666473388672,
+        "3000": 2360.5078125
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-046",
+      "description": "OCHILTREE 3000 m source support exceeds 1000 m",
+      "expected": "3000 m > 1000 m",
+      "observed": {
+        "1000": 940.1156921386719,
+        "3000": 6371.98828125
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-047",
+      "description": "Solver parameters remain exact",
+      "expected": {
+        "ETrF clamp": "-0.1 to 1.2",
+        "H convergence tolerance": "2 W m-2",
+        "Material |Delta ETa|": "1.0 mm d-1",
+        "Maximum stability iterations": "10",
+        "Minimum source pixels": "30",
+        "Primary source statistic": "Median",
+        "Source locator": "35.999399 N, 101.979024 W",
+        "Source radii": "1000 and 3000 m",
+        "Temporal matching": "Same date only",
+        "Thermal-separation gate": "6.5 K",
+        "r_ah cap": "8000 s m-1",
+        "r_ah convergence tolerance": "0.02 fractional change"
+      },
+      "observed": {
+        "ETrF clamp": "-0.1 to 1.2",
+        "H convergence tolerance": "2 W m-2",
+        "Material |Delta ETa|": "1.0 mm d-1",
+        "Maximum stability iterations": "10",
+        "Minimum source pixels": "30",
+        "Primary source statistic": "Median",
+        "Source locator": "35.999399 N, 101.979024 W",
+        "Source radii": "1000 and 3000 m",
+        "Temporal matching": "Same date only",
+        "Thermal-separation gate": "6.5 K",
+        "r_ah cap": "8000 s m-1",
+        "r_ah convergence tolerance": "0.02 fractional change"
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-048",
+      "description": "County count source reconciles",
+      "expected": {
+        "MOORE": 30,
+        "OCHILTREE": 9
+      },
+      "observed": {
+        "MOORE": 30,
+        "OCHILTREE": 9
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-049",
+      "description": "County-radius QA source reconciles",
+      "expected": 4,
+      "observed": 4,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-050",
+      "description": "Figure design remains unchanged",
+      "expected": false,
+      "observed": false,
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-051",
+      "description": "Scientific boundary is attached to every public row",
+      "expected": "one identical boundary per output",
+      "observed": {
+        "county_radius": 1,
+        "funnel": 1,
+        "mask": 1,
+        "text": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "KC-052",
+      "description": "Source contract authorizes all outputs",
+      "expected": [
+        "figure7_county_radius_source.csv",
+        "figure7_mask_response_source.csv",
+        "figure7_processing_funnel_source.csv",
+        "known_cold_reference_execution_record.json",
+        "known_cold_reference_text_statistics.csv",
+        "known_cold_reference_validation.json"
+      ],
+      "observed": [
+        "figure7_county_radius_source.csv",
+        "figure7_mask_response_source.csv",
+        "figure7_processing_funnel_source.csv",
+        "known_cold_reference_execution_record.json",
+        "known_cold_reference_text_statistics.csv",
+        "known_cold_reference_validation.json"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "checks": 52,
+  "failed": 0,
+  "figure_change": false,
+  "module": "known_cold_reference",
+  "passed": 52,
+  "runtime_input_validation": {
+    "checks": 922,
+    "failed": 0,
+    "modules": [
+      "known_cold_reference"
+    ],
+    "passed": 922,
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "scientific_boundary": "Diagnostic known-cold reference sensitivity only; accepted METRIC remains the production record; no corrected ET; no observed or validation ET; no pumping or groundwater-withdrawal evidence; no water-source attribution.",
+  "standard_deviation": {
+    "primary": {
+      "ddof": 1,
+      "interpretation": "descriptive grouped spread only",
+      "n_per_support_domain": 4,
+      "observational_unit": "county-radius group median",
+      "type": "sample standard deviation"
+    },
+    "secondary": {
+      "ddof": 1,
+      "interpretation": "secondary diagnostic spread only",
+      "n": {
+        "active_canopy": 39,
+        "large_ETrF": 39,
+        "mechanism_evidence": 38,
+        "valid_output": 39
+      },
+      "observational_unit": "strict raster-radius record median",
+      "type": "sample standard deviation"
+    }
+  },
+  "status": "PASS",
+  "validation_version": "1.0.0",
+  "warnings": 0
+}

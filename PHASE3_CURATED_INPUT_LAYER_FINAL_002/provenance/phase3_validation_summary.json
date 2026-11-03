@@ -1,0 +1,12 @@
+{
+  "version": "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+  "status": "PASS_WITH_DOCUMENTED_GAPS",
+  "checks": 26,
+  "passed": 24,
+  "warnings": 2,
+  "failed": 0,
+  "documented_gaps": [
+    "Exact study-region GeoJSON",
+    "Individual large-raster hashes"
+  ]
+}

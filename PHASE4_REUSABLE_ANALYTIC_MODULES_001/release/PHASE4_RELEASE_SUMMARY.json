@@ -1,0 +1,59 @@
+{
+  "exclusions": {
+    "count": 0,
+    "entries": [],
+    "generated_metadata_self_excluded": [
+      "release/PHASE4_RELEASE_MANIFEST.csv",
+      "release/PHASE4_RELEASE_SUMMARY.json",
+      "release/SHA256SUMS"
+    ],
+    "reason_counts": {}
+  },
+  "inventory": {
+    "bytes": 1415027,
+    "executable_files": 4,
+    "files": 80,
+    "role_counts": {
+      "canonical_result": 41,
+      "configuration": 1,
+      "operational_script": 2,
+      "python_source": 12,
+      "release_tool": 2,
+      "root_metadata": 4,
+      "test": 18
+    }
+  },
+  "manifest": {
+    "relative_path": "release/PHASE4_RELEASE_MANIFEST.csv",
+    "rows": 80,
+    "sha256": "ac38a792d4094649f834d0bee7b2676dbc06c3d9f13d42b62398a7de9c962e9a"
+  },
+  "package_name": "PHASE4_REUSABLE_ANALYTIC_MODULES_001",
+  "package_version": "1.0.0",
+  "release_summary_version": "1.0.0",
+  "scientific_boundaries": {
+    "completed_class_i_assignments": 0,
+    "groundwater_attribution_claimed": false,
+    "historical_notebooks_are_runtime_inputs": false,
+    "phase3_bundled": false,
+    "pumping_validation_claimed": false
+  },
+  "source_contract": {
+    "relative_path": "config/phase4_source_contract.yml",
+    "sha256": "b701177f25c7c758e50880bbf63901ba95d0d1e4bc7dc03d7af4038e4e8ff725"
+  },
+  "verified_status": {
+    "pipeline": {
+      "canonical_result_files": 41,
+      "results_tree_sha256": "9da2eb226a47c8633a5bf43afbdef48625026501e3ec78402627293091a40138",
+      "status": "PASS"
+    },
+    "runtime_validation": {
+      "checks": 1708,
+      "failed": 0,
+      "passed": 1708,
+      "status": "PASS",
+      "warnings": 0
+    }
+  }
+}

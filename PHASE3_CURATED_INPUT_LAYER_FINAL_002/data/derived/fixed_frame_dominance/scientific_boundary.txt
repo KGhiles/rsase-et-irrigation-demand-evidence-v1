@@ -1,0 +1,12 @@
+V47 B1 clean raster-object analysis boundary
+==========================================
+
+Earth Engine physical GeoTIFF tiles are grouped into 16 logical county-year-scenario raster stacks.
+
+No official field/pivot boundaries were used. Candidate raster-derived corn objects were created from the 2011 retained S4 corn mask, then exact 2011 pixel area was extracted. Only objects meeting the area threshold were retained for all-year extraction.
+
+These raster-derived corn objects are not official field boundaries, ownership parcels, or validated pivots. They are field-like/pivot-scale analysis units for extreme-year ET-to-irrigation-proxy sensitivity.
+
+This package reports ET-derived irrigation requirement proxy and ET-derived gross pumping proxy evidence. It is not measured pumping, not groundwater withdrawal measurement, not pumping validation, and not Q-stable validation.
+
+Core chain: ET plausible enough -> pumping proxy plausible enough -> later Q-stable pairing

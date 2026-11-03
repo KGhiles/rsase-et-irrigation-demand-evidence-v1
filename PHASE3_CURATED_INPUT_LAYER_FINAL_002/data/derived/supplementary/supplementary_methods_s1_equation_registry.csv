@@ -1,0 +1,27 @@
+equation,linear_formula,definition
+S1,"C_r = {p in B_r: M_acc = 1, M_corn = 1, NDVI >= 0.65, LAI >= 2.50, LE/Rn >= 0.85, ETrF >= 0.85, H <= 50 W m^-2}",Eligible source-pixel set.
+S2,"T_KC,r = median{T_s,p : p in C_r},  n(C_r) >= 30",Primary known-cold temperature.
+S3,"Delta T_anchor,r = T_hot - T_KC,r >= 6.5 K",Main thermal-separation gate.
+S4,"LE_cold,r^KC = 1.05 lambda ETr_h / 3600",Cold-reference latent-energy condition.
+S5,"H_cold,r^KC = R_n,cold,r - G_cold,r - LE_cold,r^KC",Cold-reference sensible heat.
+S6,"H_hot = R_n,hot - G_hot",Retained hot-reference sensible heat.
+S7,"h_c = clip(LAI/3, 0.10, 2.0)",Canopy height.
+S8,"d = 0.67 h_c;  z_om = max(0.123 h_c, 0.005);  z_oh = max(z_om/10, 0.0005)",Roughness and displacement.
+S9,"u_* = max[0.05, kappa u_2 / {ln(z_eff/z_om) - psi_m}]",Friction velocity.
+S10,"r_ah,raw = max[1, {ln(z_u/z_oh)-psi_h,u}{ln(z_t/z_oh)-psi_h,t} / (kappa^2 u_*)];  r_ah = min(r_ah,raw, 8000)",Aerodynamic resistance.
+S11,"dT_cold = H_cold r_ah,cold / (rho_cold c_p);  dT_hot = H_hot r_ah,hot / (rho_hot c_p)",Reference dT values.
+S12,"a = (dT_hot - dT_cold)/(T_hot - T_KC,r);  b = dT_cold - a T_KC,r",Image-scale calibration.
+S13,"dT_i = a T_s,i + b;  H_i = rho_i c_p dT_i / r_ah,i",Target-pixel sensible heat.
+S14,"H_safe = sign(H) max(|H|, 5 W m^-2)",Numerical H floor.
+S15,"L = -rho c_p u_*^3 T_a / (kappa g H_safe),  clipped to [-1000, 1000] m",Monin-Obukhov length.
+S16,"x = (1 - 16 zeta)^(1/4),  zeta < 0",Unstable stability variable.
+S17,psi_m = 2 ln[(1+x)/2] + ln[(1+x^2)/2] - 2 atan(x) + pi/2,Unstable momentum correction.
+S18,psi_h = 2 ln[(1+x^2)/2],Unstable heat correction.
+S19,"psi_m = psi_h = -5 zeta,  zeta >= 0",Stable correction.
+S20,"|H^(k) - H^(k-1)| <= 2 W m^-2  and  |r_ah^(k)-r_ah^(k-1)|/max(|r_ah^(k-1)|,1) <= 0.02",Convergence criterion.
+S21,"LE_i^KC = R_n,i - G_i - H_i^KC",Re-solved latent heat.
+S22,"LE_ref = lambda ETr_h / 3600;  ETrF_raw,i^KC = LE_i^KC / max(LE_ref, 1 W m^-2)",Raw re-solved ETrF.
+S23,"ETrF_i^KC = clip(ETrF_raw,i^KC, -0.1, 1.2);  ETa_i^KC = ETrF_i^KC ETr_daily",Bounded ETrF and daily ETa-equivalent.
+S24,"Delta ETrF_i^KC = ETrF_i^KC - ETrF_base,i;  Delta ETa_i^KC = ETa_i^KC - ETa_base,i",Perturbation response.
+S25,M_valid ⊇ M_active ⊇ M_large-ETrF ⊇ M_mechanism,Strict nested hierarchy from broad to narrow.
+S26,|Delta ETa_i^KC| >= 1.0 mm d^-1,Material-sensitivity threshold.

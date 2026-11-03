@@ -1,0 +1,93 @@
+{
+  "authorized_inputs": {
+    "data/derived/aerodynamic_sensitivity/figure4_etrf_scenario_envelopes.csv": {
+      "sha256": "8580aafa4f93fb792ad9a44e138b6c59e83e5c671a3a6049900568313e432485"
+    },
+    "data/derived/aerodynamic_sensitivity/figure4_peak_county_month_sensitivity.csv": {
+      "sha256": "5622087ee8d292d45444a1ae59df4533afbdd10cf8d3672d1a7b1f8eeb040779"
+    },
+    "data/derived/aerodynamic_sensitivity/figure4_scope_summary.csv": {
+      "sha256": "bb28825af4cfd3bcf0bc4af7a075e2f9dd6d356fac0a6c6190c4d21731119f84"
+    },
+    "data/derived/aerodynamic_sensitivity/figure4_sensible_heat_scenario_envelopes.csv": {
+      "sha256": "be62e6b298f5f1ba7972004185beee585a3d14ebaa22b364b19f3a75ccb67d39"
+    },
+    "data/derived/aerodynamic_sensitivity/table3_aerodynamic_sensitivity.csv": {
+      "sha256": "13bf81ca894f46c96cc03f1eeaf6ba4392d3378dd945857fd1e74417a53dbb44"
+    }
+  },
+  "command_template": [
+    "python",
+    "-m",
+    "qstable_awm.aerodynamic_sensitivity",
+    "--phase3-root",
+    "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "--output-dir",
+    "results/aerodynamic_sensitivity",
+    "--contract",
+    "config/phase4_source_contract.yml"
+  ],
+  "contract_relative_path": "config/phase4_source_contract.yml",
+  "contract_sha256": "b701177f25c7c758e50880bbf63901ba95d0d1e4bc7dc03d7af4038e4e8ff725",
+  "derived_output_validation": {
+    "checks": 16,
+    "failed": 0,
+    "passed": 16,
+    "status": "PASS",
+    "warnings": 0
+  },
+  "determinism_note": "All outputs derive only from the five frozen V42.5 Phase 3 tables; METRIC is not rerun and no alternative ET product is created.",
+  "figure_change": false,
+  "module": "aerodynamic_sensitivity",
+  "module_relative_path": "src/qstable_awm/aerodynamic_sensitivity.py",
+  "module_sha256": "c68a14e337a9f8ffb0de234b74458d9433097a0ff21faf17a127ecc0dd14860d",
+  "outputs": {
+    "aerodynamic_sensitivity_text_statistics.csv": {
+      "sha256": "c555ee0afe109f4ea38519a2f71721fbe42f5d4485dffcfc29928e95ca158386",
+      "size_bytes": 24687
+    },
+    "aerodynamic_sensitivity_validation.json": {
+      "sha256": "8073e5ed61dcc888c8d03637b1806c6450e23b44279c955fb818df3c645161df",
+      "size_bytes": 4381
+    },
+    "figure4_aerodynamic_source.csv": {
+      "sha256": "6c65e1697decbd994c20c5bc5d022b56acd2f3ec4ce6ea3f89f268a7edcd221e",
+      "size_bytes": 192549
+    },
+    "figure4_peak_sensitivity_source.csv": {
+      "sha256": "2a10621e26d86c2d8e9c8078783b17d342061d8f4213386dfece6c6a7811f0c6",
+      "size_bytes": 539
+    },
+    "table3_aerodynamic_summary.csv": {
+      "sha256": "2e9ee99daa801581404d61d8d004066bd5bb343fd731bd79131ed6136bf635d6",
+      "size_bytes": 2512
+    }
+  },
+  "phase3_package": "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+  "record_version": "1.0.0",
+  "runtime_input_validation": {
+    "checks": 155,
+    "contract_path": "/mnt/data/qstable_phase4_work/PHASE4_REUSABLE_ANALYTIC_MODULES_001/config/phase4_source_contract.yml",
+    "failed": 0,
+    "modules": [
+      "aerodynamic_sensitivity"
+    ],
+    "passed": 155,
+    "phase3_root": "/mnt/data/qstable_phase4_work/PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "scientific_boundary": "Aerodynamic perturbations are diagnostic only; no corrected or alternative ET product is promoted.",
+  "statistical_decisions": {
+    "basis": "non-BASE county-crop-month-scenario summaries within each scope",
+    "ddof": 1,
+    "interpretation": "descriptive spread, not ET uncertainty or validation",
+    "scope_n": {
+      "all_crops_all_months_nonBASE": 288,
+      "corn_all_months_nonBASE": 144,
+      "corn_peak_JulAug_nonBASE": 48
+    },
+    "type": "sample standard deviation"
+  }
+}

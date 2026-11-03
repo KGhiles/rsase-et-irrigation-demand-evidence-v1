@@ -1,0 +1,75 @@
+{
+  "authorized_inputs": {
+    "data/derived/climate_context/monthly_climate_context.csv": {
+      "sha256": "efa851d0322cfc304495e024033e94e4838364bcf85b0af6b1d89d5efc3bc3f6"
+    },
+    "data/derived/climate_context/seasonal_climate_context.csv": {
+      "sha256": "7a429a855fce8aee4e8f98dc58fb27ca0bda7a699d04a44174954a68e58a1f72"
+    }
+  },
+  "command_template": [
+    "python",
+    "-m",
+    "qstable_awm.climate_context",
+    "--phase3-root",
+    "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "--output-dir",
+    "results/climate_context",
+    "--contract",
+    "config/phase4_source_contract.yml"
+  ],
+  "contract_relative_path": "config/phase4_source_contract.yml",
+  "contract_sha256": "b701177f25c7c758e50880bbf63901ba95d0d1e4bc7dc03d7af4038e4e8ff725",
+  "derived_output_validation": {
+    "checks": 7,
+    "failed": 0,
+    "passed": 7,
+    "status": "PASS",
+    "warnings": 0
+  },
+  "determinism_note": "All numerical outputs derive only from the two frozen Phase 3 climate-context tables.",
+  "figure_change": false,
+  "module": "climate_context",
+  "module_relative_path": "src/qstable_awm/climate_context.py",
+  "module_sha256": "7d5e2e9d9fff10a3dfbf857d8ca9d4e9641fa73ad06d720f69d757bc28e4776b",
+  "outputs": {
+    "climate_context_text_statistics.csv": {
+      "sha256": "0a5157585ef4adc76209b201bd1de0affa078f202adedd13f19f45d38cf1ce91",
+      "size_bytes": 2067
+    },
+    "climate_context_validation.json": {
+      "sha256": "e9b8946a7bcfe76077ddfb083c01bb2b7285a029603becd0c5eb965c34edff07",
+      "size_bytes": 1653
+    },
+    "figure2_climate_source.csv": {
+      "sha256": "be3476b9c1cb458076e35d91309316a8d714380a49c426a31903ee7e0a8c4136",
+      "size_bytes": 16782
+    },
+    "figure2_monthly_trajectory_source.csv": {
+      "sha256": "e1d9c3e9fbfb9e1630818006df322453bd16da75a3bc70904969d3e2654caa1d",
+      "size_bytes": 24965
+    }
+  },
+  "phase3_package": "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+  "record_version": "1.0.0",
+  "runtime_input_validation": {
+    "checks": 130,
+    "contract_path": "/mnt/data/qstable_phase4_work/PHASE4_REUSABLE_ANALYTIC_MODULES_001/config/phase4_source_contract.yml",
+    "failed": 0,
+    "modules": [
+      "climate_context"
+    ],
+    "passed": 130,
+    "phase3_root": "/mnt/data/qstable_phase4_work/PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "scientific_boundary": "Meteorological context and deficit screening only; no METRIC ET validation, irrigation application, pumping, groundwater withdrawal, or water-source attribution.",
+  "statistical_decisions": {
+    "alternative_temporal_basis": "three comparison-year domain means: n=3",
+    "ddof": 1,
+    "recommended_text_basis": "county-season values: n=4 for 2011; n=12 for 2015, 2017, and 2023",
+    "type": "sample standard deviation"
+  }
+}

@@ -1,0 +1,9 @@
+public_band_index,public_band_name,source_band_name,source_band_index
+1,ETrF,ETf,1
+2,NDVI,NDVI,10
+3,LAI,LAI,11
+4,H_W_m2,H,2
+5,LE_over_Rn,LE_Rn_ratio,33
+6,Ts_position,Ts_position_between_anchors,14
+7,accepted_corn_mask,corn_accepted_valid_mask,38
+8,mechanism_mask,corn_full_high_ETf_mechanism,44

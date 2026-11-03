@@ -1,0 +1,13 @@
+manuscript_item,scope,distributed_path,qualification
+Figure 1,Study-region map,not included: original frozen spatial geometry,Not fully regenerated from this release
+Figure 2,Climate context,PHASE4_REUSABLE_ANALYTIC_MODULES_001/results/climate_context/figure2_climate_source.csv,Output table; temporal series also present
+Figure 3,Physical coherence,PHASE4_REUSABLE_ANALYTIC_MODULES_001/results/physical_coherence/figure3_scene_fingerprint_source.csv,Other figure3 source CSVs in same folder
+Figure 4,Aerodynamic sensitivity,PHASE4_REUSABLE_ANALYTIC_MODULES_001/results/aerodynamic_sensitivity/figure4_aerodynamic_source.csv,Table 3 also in same folder
+Figure 5,Corn support,PHASE4_REUSABLE_ANALYTIC_MODULES_001/results/crop_support/figure5_domain_crop_support_source.csv,County support in same folder
+Figure 6,2011 inclusion sensitivity,PHASE4_REUSABLE_ANALYTIC_MODULES_001/results/fixed_frame_dominance/figure6_dominance_class_source.csv,County and object comparison inputs in curated layer
+Figure 7,Known-cold reference sensitivity,PHASE4_REUSABLE_ANALYTIC_MODULES_001/results/known_cold_reference/figure7_mask_response_source.csv,Full raster collection not included
+Figure 8,Interpretation classes,PHASE4_REUSABLE_ANALYTIC_MODULES_001/results/interpretation_classes/figure8_interpretation_source.csv,Categorical diagnostic matrix
+Table 3,Aerodynamic summary,PHASE4_REUSABLE_ANALYTIC_MODULES_001/results/aerodynamic_sensitivity/table3_aerodynamic_summary.csv,Final analytical table
+"Table S1–S3, S5–S11",Supplementary tables,supplementary/RSASE_Supplementary_Tables_S1_S11.docx,Final manuscript-matched tabular supplement
+Table S4 and Supplementary Methods S1,Solver definitions and parameters,supplementary/Supplementary_Methods_S1.docx,Complete solver description; additional CSV under Phase 3
+Table S10,Annual CDL raster seasonal summaries,supplementary/RSASE_Supplementary_Tables_S1_S11.docx,County raster values must not be confused with fixed-object population

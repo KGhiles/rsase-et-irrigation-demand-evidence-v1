@@ -1,0 +1,44 @@
+{
+  "version": "PHASE2_FIGURE8_PUBLICATION_FINAL_003",
+  "physical_coherence": {
+    "source": "V46C",
+    "active_scenes": 8,
+    "large_ETrF_pass": "7/8",
+    "median_ETrF": 0.915156215429306
+  },
+  "aerodynamic_sensitivity": {
+    "source": "V42.5",
+    "corn_peak_max_abs_delta_ETrF": 0.0060984693236338,
+    "corn_peak_median_abs_delta_ETrF": 0.0009052752255915
+  },
+  "fixed_frame": {
+    "source": "V47B2 and V47 clean objects",
+    "objects": 1184,
+    "strong_2011_dominance_objects": 1139,
+    "comparison_year_corn_fraction": {
+      "2015": 0.56,
+      "2017": 0.515,
+      "2023": 0.347
+    }
+  },
+  "known_cold_strict": {
+    "source": "V51 strict ACES",
+    "strict_rasters": 39,
+    "Moore": 30,
+    "Ochiltree": 9,
+    "active_canopy_response_range_mm_d": [
+      2.91,
+      3.92
+    ]
+  },
+  "non2011_candidate": {
+    "source": "V50",
+    "object_years": 4196,
+    "accepted_anchor_intervals": 26085,
+    "hls_temporal_bins": 17,
+    "hls_object_bin_records": 71332,
+    "hls_role": "support-only",
+    "final_status": "Class I candidate",
+    "completed_Class_I_assignment": false
+  }
+}

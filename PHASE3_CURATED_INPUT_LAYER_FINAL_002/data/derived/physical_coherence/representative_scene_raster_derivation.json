@@ -1,0 +1,16 @@
+{
+  "public_file": "data/derived/physical_coherence/representative_scene_plot_ready.tif",
+  "public_sha256": "a2bb65acf377f4d5bc3836563a654e71b4ec612a2ccb4ef46254f49191fdaea8",
+  "source_file": "v46c_full_05_target_raster_OCHILTREE_2011_08_20110807_2_LE07_030035_20110807.tif",
+  "source_size_bytes": 304382837,
+  "source_sha256": "7d046ed266d78c0226cba7a1e9af0572aa533e1bd085bb7f4273845f19f67f9d",
+  "source_crs": "EPSG:32614",
+  "public_crs": "EPSG:32614",
+  "decimation_step": 3,
+  "source_resolution_m": 30,
+  "public_resolution_m": 90.0,
+  "public_width": 549,
+  "public_height": 557,
+  "public_band_count": 8,
+  "use_boundary": "plot-ready visualization input only; full-resolution source remains external"
+}

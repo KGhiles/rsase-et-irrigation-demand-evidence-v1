@@ -1,0 +1,13 @@
+parameter,value,role
+Source locator,"35.999399 N, 101.979024 W",Search center only
+Source radii,1000 and 3000 m,Spatial-support sensitivity
+Temporal matching,Same date only,Main strict analysis
+Minimum source pixels,30,Source validity
+Primary source statistic,Median,Known-cold temperature and source state
+Thermal-separation gate,6.5 K,Main preflight gate
+Maximum stability iterations,10,Numerical solver
+H convergence tolerance,2 W m-2,Pixel convergence
+r_ah convergence tolerance,0.02 fractional change,Pixel convergence
+r_ah cap,8000 s m-1,Numerical guardrail
+ETrF clamp,-0.1 to 1.2,Output guardrail after flagging
+Material |Delta ETa|,1.0 mm d-1,Interpretation threshold

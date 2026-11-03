@@ -1,0 +1,151 @@
+metric,metric_label,unit,series,series_role,year,month,mean_mm,sd_mm,n,sd_basis
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,4,8.230683295207964,12.456383064064696,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,5,101.56874145735543,95.04103285830026,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,6,212.89285501504045,67.28651595108498,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,7,203.43924159855393,47.60144387719921,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,8,177.48696581405332,81.3300747248442,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,9,188.341050970696,50.70849195240402,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2015,comparison_year,2015,4,8.3035941639303,14.66048066223832,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2015,comparison_year,2015,5,24.856580891036245,47.59937035222504,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2015,comparison_year,2015,6,217.29029483062598,36.41133537900304,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2015,comparison_year,2015,7,153.63569894288509,22.68672760851923,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2015,comparison_year,2015,8,185.40644201910294,6.956042478139639,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2015,comparison_year,2015,9,224.8302172706022,25.962752145823647,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2017,comparison_year,2017,4,-0.319744747504529,6.015748324001433,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2017,comparison_year,2017,5,220.85438448017754,17.398320431946136,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2017,comparison_year,2017,6,284.6653071546333,10.8832227855606,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2017,comparison_year,2017,7,230.2406194672953,13.978065380636139,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2017,comparison_year,2017,8,82.5024749617578,44.203607810132766,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2017,comparison_year,2017,9,128.05454368427516,23.427737263780365,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2023,comparison_year,2023,4,16.70820046919812,11.157744297339045,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2023,comparison_year,2023,5,58.99525900085253,36.287214850295655,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2023,comparison_year,2023,6,136.7229630598621,22.946594927084305,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2023,comparison_year,2023,7,226.44140638548134,51.26215329271669,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2023,comparison_year,2023,8,264.55198046129925,5.567814222169785,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2023,comparison_year,2023,9,212.13839195721062,28.79322823022425,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2011,stress_test,2011,4,66.86690897924315,8.207831853892689,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2011,stress_test,2011,5,341.1137699127253,8.314749066195569,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2011,stress_test,2011,6,441.5788553535576,15.726163424608524,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2011,stress_test,2011,7,376.9402522895719,11.737945721774443,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2011,stress_test,2011,8,288.2874286678522,10.243252560682963,4,sample SD across four counties
+ETr_minus_P_window_mm,Monthly-window ETr - P deficit,mm,2011,stress_test,2011,9,219.9729804983971,9.267482062334507,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,4,12.082798441372512,10.626394114544098,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,5,138.80571706187152,68.09488015331497,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,6,222.98297247109653,58.89487434817102,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,7,223.2409235645115,34.70996850669484,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,8,190.64476095943323,68.75511086105168,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,9,196.0413445328921,44.685935656055214,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2015,comparison_year,2015,4,12.868600434743033,12.561413295336926,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2015,comparison_year,2015,5,76.08289538373876,23.855727615808796,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2015,comparison_year,2015,6,225.69790562737666,27.767436820580684,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2015,comparison_year,2015,7,185.9127551456525,15.507086814334961,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2015,comparison_year,2015,8,195.08243882807963,6.693215585798247,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2015,comparison_year,2015,9,228.79578070779758,23.253402757900666,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2017,comparison_year,2017,4,4.924309445174501,5.1467079555285,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2017,comparison_year,2017,5,225.14807755163145,15.580611701127669,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2017,comparison_year,2017,6,287.3904594322374,10.04136320120729,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2017,comparison_year,2017,7,243.3705781663635,11.533516877426518,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2017,comparison_year,2017,8,110.04209242651393,28.99762689935001,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2017,comparison_year,2017,9,142.69612791713638,20.814735099183117,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2023,comparison_year,2023,4,18.455485444200008,10.318257183532664,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2023,comparison_year,2023,5,115.18617825024437,16.148615826305846,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2023,comparison_year,2023,6,155.8605523536755,17.268775456839588,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2023,comparison_year,2023,7,240.43943738151842,35.376968375692556,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2023,comparison_year,2023,8,266.8097516237061,4.918591028796324,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2023,comparison_year,2023,9,216.63212497374238,23.615373753077513,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2011,stress_test,2011,4,67.02437373038994,8.034662805214282,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2011,stress_test,2011,5,341.4196687804844,8.177067708414132,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2011,stress_test,2011,6,441.7061275513855,15.591484010592248,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2011,stress_test,2011,7,379.56752138335503,10.68024022828261,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2011,stress_test,2011,8,294.4824869340519,8.867732896469786,4,sample SD across four counties
+ETr_minus_Peff_window_mm,Monthly-window ETr - Peff deficit,mm,2011,stress_test,2011,9,221.4058749656113,8.613062529862503,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,4,54.58230439557656,5.801544885397142,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_window_mm,Monthly-window reference ET,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,5,237.07267280307778,31.131457960682347,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_window_mm,Monthly-window reference ET,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,6,281.60778676272975,34.58794563421754,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_window_mm,Monthly-window reference ET,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,7,305.848759849423,12.999376314017516,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_window_mm,Monthly-window reference ET,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,8,256.1025124834825,40.14892050981412,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_window_mm,Monthly-window reference ET,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,9,250.0101125605037,23.361933473598388,12,sample SD across twelve county-year values (four counties x three comparison years)
+ETr_window_mm,Monthly-window reference ET,mm,2015,comparison_year,2015,4,59.600979733568636,3.329355340343215,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2015,comparison_year,2015,5,199.19245458769007,7.979940959289744,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2015,comparison_year,2015,6,278.9345256196321,7.454548510815329,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2015,comparison_year,2015,7,291.23063016572564,7.666741511662307,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2015,comparison_year,2015,8,261.29830722327756,6.028320438611221,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2015,comparison_year,2015,9,270.08503715565087,10.87530156626649,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2017,comparison_year,2017,4,56.35957400400283,2.4747137317542385,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2017,comparison_year,2017,5,270.5732390678957,6.692477941121688,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2017,comparison_year,2017,6,322.6349206720032,7.53792903059686,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2017,comparison_year,2017,7,317.93101593162896,6.365219925585707,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2017,comparison_year,2017,8,207.12801773082043,8.903201193505025,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2017,comparison_year,2017,9,222.3785527414428,14.927784171577866,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2023,comparison_year,2023,4,47.78635944915819,2.613304423204516,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2023,comparison_year,2023,5,241.45232475364756,3.157919829502049,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2023,comparison_year,2023,6,243.25391399655388,7.677834329843917,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2023,comparison_year,2023,7,308.38463345091435,5.672496514825664,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2023,comparison_year,2023,8,299.88121249634946,2.3225780529736775,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2023,comparison_year,2023,9,257.56674778441743,5.34829545468884,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2011,stress_test,2011,4,74.67517289614143,2.432515878297089,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2011,stress_test,2011,5,352.2263527698037,6.014628820958669,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2011,stress_test,2011,6,447.22631293173623,12.03928213894571,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2011,stress_test,2011,7,411.294115165684,5.901859554176378,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2011,stress_test,2011,8,346.455653869079,7.085422184683894,4,sample SD across four counties
+ETr_window_mm,Monthly-window reference ET,mm,2011,stress_test,2011,9,248.1062741134779,5.624301064536784,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,4,46.35162110788104,14.345361646233524,12,sample SD across twelve county-year values (four counties x three comparison years)
+P_window_mm,Monthly-window precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,5,135.50393145726596,69.56193557797522,12,sample SD across twelve county-year values (four counties x three comparison years)
+P_window_mm,Monthly-window precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,6,68.71493199997258,35.74595058445752,12,sample SD across twelve county-year values (four counties x three comparison years)
+P_window_mm,Monthly-window precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,7,102.40951832828246,37.688605694500986,12,sample SD across twelve county-year values (four counties x three comparison years)
+P_window_mm,Monthly-window precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,8,78.61554669852106,42.80455800522725,12,sample SD across twelve county-year values (four counties x three comparison years)
+P_window_mm,Monthly-window precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,9,61.6690615434978,30.34632284714824,12,sample SD across twelve county-year values (four counties x three comparison years)
+P_window_mm,Monthly-window precipitation,mm,2015,comparison_year,2015,4,51.297385583347406,12.894246686004346,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2015,comparison_year,2015,5,174.3358736966538,39.81949702558366,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2015,comparison_year,2015,6,61.64423076035934,33.62908850129646,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2015,comparison_year,2015,7,137.59493130946188,19.13218513493151,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2015,comparison_year,2015,8,75.89186522393592,1.458577878012383,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2015,comparison_year,2015,9,45.25482017347501,19.841526499286037,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2017,comparison_year,2017,4,56.679318751507374,5.091869389458557,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2017,comparison_year,2017,5,49.71885482403212,11.41751631788348,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2017,comparison_year,2017,6,37.969614075010554,6.004949158722591,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2017,comparison_year,2017,7,87.69039668727453,8.840559286272155,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2017,comparison_year,2017,8,124.62554282453321,36.93870301573423,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2017,comparison_year,2017,9,94.32400888435787,9.42072936397644,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2023,comparison_year,2023,4,31.078158988788328,8.746712412172327,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2023,comparison_year,2023,5,182.4570658511119,35.55864576696379,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2023,comparison_year,2023,6,106.53095116454782,16.865102118883694,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2023,comparison_year,2023,7,81.94322698811098,47.602567726675794,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2023,comparison_year,2023,8,35.32923204709404,4.56703678355363,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2023,comparison_year,2023,9,45.4283555726605,27.594985794450558,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2011,stress_test,2011,4,7.808263858131738,6.103882493561591,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2011,stress_test,2011,5,11.11258260424483,4.8326338689763695,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2011,stress_test,2011,6,5.647457437025881,5.229989381195545,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2011,stress_test,2011,7,34.35386236917259,8.842184707013773,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2011,stress_test,2011,8,58.16822501566316,10.140776767811136,4,sample SD across four counties
+P_window_mm,Monthly-window precipitation,mm,2011,stress_test,2011,9,28.133293546324754,7.5079592271393825,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,4,42.499505956649905,12.311843086917897,12,sample SD across twelve county-year values (four counties x three comparison years)
+Peff_window_mm,Monthly-window effective precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,5,98.26695574347167,41.050700783407066,12,sample SD across twelve county-year values (four counties x three comparison years)
+Peff_window_mm,Monthly-window effective precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,6,58.62481428673487,26.757381512053605,12,sample SD across twelve county-year values (four counties x three comparison years)
+Peff_window_mm,Monthly-window effective precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,7,82.60783615954568,24.531210777055968,12,sample SD across twelve county-year values (four counties x three comparison years)
+Peff_window_mm,Monthly-window effective precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,8,65.45775169410085,29.525515272774896,12,sample SD across twelve county-year values (four counties x three comparison years)
+Peff_window_mm,Monthly-window effective precipitation,mm,comparison_mean_2015_2017_2023,comparison_aggregate,,9,53.96876797711169,24.217703973234162,12,sample SD across twelve county-year values (four counties x three comparison years)
+Peff_window_mm,Monthly-window effective precipitation,mm,2015,comparison_year,2015,4,46.732379307749106,10.70586522938584,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2015,comparison_year,2015,5,123.10955921685667,16.023523738182185,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2015,comparison_year,2015,6,53.236619761235964,24.679613359192345,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2015,comparison_year,2015,7,105.31787502919039,10.797259182726531,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2015,comparison_year,2015,8,66.21586873502498,1.0445295074501675,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2015,comparison_year,2015,9,41.28925639613433,16.83565908515982,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2017,comparison_year,2017,4,51.43526455882834,4.1318520283080025,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2017,comparison_year,2017,5,45.42516148825729,9.546055823871935,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2017,comparison_year,2017,6,35.24446140691325,5.041656461536837,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2017,comparison_year,2017,7,74.56043730836465,6.293699004293523,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2017,comparison_year,2017,8,97.08592544060355,21.152093973446465,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2017,comparison_year,2017,9,79.68242473286708,6.615204769754597,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2023,comparison_year,2023,4,29.330874003372283,7.908256512236794,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2023,comparison_year,2023,5,126.26614652530107,15.488269658262656,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2023,comparison_year,2023,6,87.39336169205538,10.936419729878612,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2023,comparison_year,2023,7,67.945196141082,31.459025948354356,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2023,comparison_year,2023,8,33.07146090667405,3.8582561463825265,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2023,comparison_year,2023,9,40.934622802333664,22.37903481435369,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2011,stress_test,2011,4,7.650799166332408,5.9249506250537225,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2011,stress_test,2011,5,10.80668407711386,4.63413133416333,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2011,stress_test,2011,6,5.52018552379162,5.0688901030504825,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2011,stress_test,2011,7,31.726593676428585,7.528212701560213,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2011,stress_test,2011,8,51.97316733899227,8.038149011790123,4,sample SD across four counties
+Peff_window_mm,Monthly-window effective precipitation,mm,2011,stress_test,2011,9,26.70039890125605,6.732779632489226,4,sample SD across four counties

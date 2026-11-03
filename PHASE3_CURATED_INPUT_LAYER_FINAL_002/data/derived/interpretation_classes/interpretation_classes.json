@@ -1,0 +1,276 @@
+{
+  "version": "PHASE2_FIGURE8_PUBLICATION_FINAL_003",
+  "figure": "Figure 8",
+  "scientific_boundary": "Interpretation-support classification only; no corrected ET, pumping validation, groundwater-withdrawal validation, or water-source attribution.",
+  "release_decision": {
+    "v50_included_narrowly": true,
+    "hls_included_as_support_only": true,
+    "v49_known_cold_evidence_included": false,
+    "class_I_candidate_present": true,
+    "completed_class_I_assignment_present": false,
+    "class_I_candidate_is_not_class_I": true
+  },
+  "authority": {
+    "V42.5": "aerodynamic sensitivity",
+    "V46C": "physical coherence",
+    "V47B1": "climate and precipitation accounting",
+    "V47B2": "fixed-frame crop support",
+    "V47 clean objects": "fixed-frame dominance",
+    "V50": "Class I-candidate and HLS temporal-support evidence only",
+    "V51 strict ACES": "final known-cold reference sensitivity"
+  },
+  "evidence_dimensions": [
+    {
+      "code": "E1",
+      "label": "Crop"
+    },
+    {
+      "code": "E2",
+      "label": "Scene"
+    },
+    {
+      "code": "E3",
+      "label": "Physical"
+    },
+    {
+      "code": "E4",
+      "label": "P/Peff"
+    },
+    {
+      "code": "E5",
+      "label": "Object"
+    },
+    {
+      "code": "E6",
+      "label": "Reference"
+    },
+    {
+      "code": "E7",
+      "label": "Scale"
+    },
+    {
+      "code": "E8",
+      "label": "Status"
+    }
+  ],
+  "class_definitions": [
+    {
+      "class_id": "I",
+      "designation": "Proxy-eligible condition",
+      "condition": "crop-supported; accepted; coherent; explicit accounting; valid frame and scale; acceptable sensitivity",
+      "supported_use": "proxy under stated assumptions"
+    },
+    {
+      "class_id": "II",
+      "designation": "Stress-test condition",
+      "condition": "coherent but stress-year dominated or reference-sensitive",
+      "supported_use": "stress-test diagnostic"
+    },
+    {
+      "class_id": "III",
+      "designation": "Crop-support-limited condition",
+      "condition": "weak or inconsistent concurrent crop support",
+      "supported_use": "landscape/crop-support diagnostic"
+    },
+    {
+      "class_id": "IV",
+      "designation": "Non-interpretable condition",
+      "condition": "required source or diagnostic support unavailable or invalid",
+      "supported_use": "excluded from the affected unsupported interpretation"
+    }
+  ],
+  "matrix_rows": [
+    {
+      "condition": "2011 active-canopy large-ETrF scenes",
+      "evidence": [
+        {
+          "code": "E1",
+          "value": "Supported",
+          "status": "supported"
+        },
+        {
+          "code": "E2",
+          "value": "Accepted",
+          "status": "supported"
+        },
+        {
+          "code": "E3",
+          "value": "Coherent",
+          "status": "supported"
+        },
+        {
+          "code": "E4",
+          "value": "Explicit",
+          "status": "supported"
+        },
+        {
+          "code": "E5",
+          "value": "2011-dominated",
+          "status": "material"
+        },
+        {
+          "code": "E6",
+          "value": "Material sensitivity",
+          "status": "material"
+        },
+        {
+          "code": "E7",
+          "value": "Scene/object",
+          "status": "supported"
+        },
+        {
+          "code": "E8",
+          "value": "Diagnostic",
+          "status": "material"
+        }
+      ],
+      "final_class": "Class II",
+      "supported_interpretation": "Stress-test diagnostic",
+      "basis": "Physically coherent and aerodynamically stable, but extreme-year dominated and materially reference-sensitive."
+    },
+    {
+      "condition": "Fixed 2011 frame in later years",
+      "evidence": [
+        {
+          "code": "E1",
+          "value": "Weak/mixed",
+          "status": "conditional"
+        },
+        {
+          "code": "E2",
+          "value": "Comparison-year QA",
+          "status": "conditional"
+        },
+        {
+          "code": "E3",
+          "value": "Not crop-specific",
+          "status": "conditional"
+        },
+        {
+          "code": "E4",
+          "value": "Explicit",
+          "status": "supported"
+        },
+        {
+          "code": "E5",
+          "value": "Fixed 2011 geometry",
+          "status": "conditional"
+        },
+        {
+          "code": "E6",
+          "value": "Not evaluated",
+          "status": "invalid"
+        },
+        {
+          "code": "E7",
+          "value": "Fixed landscape",
+          "status": "conditional"
+        },
+        {
+          "code": "E8",
+          "value": "Diagnostic",
+          "status": "conditional"
+        }
+      ],
+      "final_class": "Class III",
+      "supported_interpretation": "Landscape/crop-support diagnostic",
+      "basis": "The fixed geometry loses adequate concurrent corn support in the comparison years."
+    },
+    {
+      "condition": "Known-cold source unavailable",
+      "evidence": [
+        {
+          "code": "E1",
+          "value": "N/A",
+          "status": "invalid"
+        },
+        {
+          "code": "E2",
+          "value": "No concurrent source",
+          "status": "invalid"
+        },
+        {
+          "code": "E3",
+          "value": "N/A",
+          "status": "invalid"
+        },
+        {
+          "code": "E4",
+          "value": "N/A",
+          "status": "invalid"
+        },
+        {
+          "code": "E5",
+          "value": "N/A",
+          "status": "invalid"
+        },
+        {
+          "code": "E6",
+          "value": "Not estimable",
+          "status": "invalid"
+        },
+        {
+          "code": "E7",
+          "value": "County scope excluded",
+          "status": "invalid"
+        },
+        {
+          "code": "E8",
+          "value": "Excluded",
+          "status": "invalid"
+        }
+      ],
+      "final_class": "Class IV",
+      "supported_interpretation": "Excluded from strict reference-sensitivity analysis",
+      "basis": "Concurrent source support is required for the strict comparison; this does not invalidate the accepted baseline scene."
+    },
+    {
+      "condition": "Non-2011 year-specific reconstruction workflow",
+      "evidence": [
+        {
+          "code": "E1",
+          "value": "Year-specific",
+          "status": "supported"
+        },
+        {
+          "code": "E2",
+          "value": "Accepted anchors",
+          "status": "supported"
+        },
+        {
+          "code": "E3",
+          "value": "Plausible",
+          "status": "supported"
+        },
+        {
+          "code": "E4",
+          "value": "Explicit",
+          "status": "supported"
+        },
+        {
+          "code": "E5",
+          "value": "Year-specific",
+          "status": "supported"
+        },
+        {
+          "code": "E6",
+          "value": "Pending QA",
+          "status": "conditional"
+        },
+        {
+          "code": "E7",
+          "value": "Object-year",
+          "status": "supported"
+        },
+        {
+          "code": "E8",
+          "value": "Candidate",
+          "status": "conditional"
+        }
+      ],
+      "final_class": "Class I candidate",
+      "supported_interpretation": "Proxy candidate after QA",
+      "basis": "Concurrent crop framing, accepted anchors, explicit accounting, object-year aggregation, and HLS temporal QA support proxy readiness, but not completed Class I."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Create the environment from the repository root:
+#   conda env create --file environment.yml
+#   conda activate qstable-awm
+#
+# Register the local package without downloading or resolving dependencies:
+#   python -m pip install --no-build-isolation --no-deps --editable .
+name: qstable-awm
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.11
+  - pip>=24
+  - setuptools>=68
+  - numpy>=1.24,<3
+  - pandas>=2.0,<3
+  - pyyaml>=6.0,<7
+  - rasterio>=1.3,<2
+  - pytest>=8,<10

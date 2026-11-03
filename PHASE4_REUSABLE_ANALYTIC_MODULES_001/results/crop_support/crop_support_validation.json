@@ -1,0 +1,349 @@
+{
+  "check_results": [
+    {
+      "check_id": "CROP-001",
+      "description": "Phase 3 crop-input validation",
+      "expected": "PASS",
+      "observed": "PASS",
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-002",
+      "description": "Object-year row count",
+      "expected": 4736,
+      "observed": 4736,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-003",
+      "description": "Fixed object count",
+      "expected": 1184,
+      "observed": 1184,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-004",
+      "description": "Each object occurs in four accepted years",
+      "expected": [
+        4
+      ],
+      "observed": [
+        4
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-005",
+      "description": "Object-year key uniqueness",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-006",
+      "description": "Accepted year set",
+      "expected": [
+        2011,
+        2015,
+        2017,
+        2023
+      ],
+      "observed": [
+        2011,
+        2015,
+        2017,
+        2023
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-007",
+      "description": "Accepted county set",
+      "expected": [
+        "DALLAM",
+        "HARTLEY",
+        "MOORE",
+        "OCHILTREE"
+      ],
+      "observed": [
+        "DALLAM",
+        "HARTLEY",
+        "MOORE",
+        "OCHILTREE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-008",
+      "description": "Object crop fractions are bounded",
+      "expected": "within [0, 1]",
+      "observed": [
+        0.0,
+        1.0
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-009",
+      "description": "Figure 5 domain rows",
+      "expected": 4,
+      "observed": 4,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-010",
+      "description": "Figure 5 county rows",
+      "expected": 16,
+      "observed": 16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-011",
+      "description": "Domain crop-support acceptance values",
+      "expected": {
+        "2011": 1.0,
+        "2015": 0.560147,
+        "2017": 0.515189,
+        "2023": 0.347085
+      },
+      "observed": {
+        "2011": 1.0,
+        "2015": 0.5601469953626429,
+        "2017": 0.515189140786919,
+        "2023": 0.3470846443491381
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-012",
+      "description": "Object-area weighted means reproduce domain source",
+      "expected": {
+        "2011": 1.0,
+        "2015": 0.5601469953626429,
+        "2017": 0.515189140786919,
+        "2023": 0.3470846443491381
+      },
+      "observed": {
+        "2011": 1.0,
+        "2015": 0.5601469953626429,
+        "2017": 0.515189140786919,
+        "2023": 0.3470846443491381
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-013",
+      "description": "County fixed-frame areas sum to domain area",
+      "expected": {
+        "2011": 121673.50879146728,
+        "2015": 121673.50879146728,
+        "2017": 121673.50879146728,
+        "2023": 121673.50879146728
+      },
+      "observed": {
+        "2011": 121673.50879146729,
+        "2015": 121673.50879146729,
+        "2017": 121673.50879146729,
+        "2023": 121673.50879146729
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-014",
+      "description": "Embedded and standalone domain summaries agree",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-015",
+      "description": "Twelve comparison county-years remain below 0.70",
+      "expected": {
+        "maximum": "<0.70",
+        "n": 12
+      },
+      "observed": {
+        "maximum": 0.6240340312941867,
+        "n": 12
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-016",
+      "description": "2011 domain and county support equals one",
+      "expected": 1.0,
+      "observed": {
+        "county_min": 1.0,
+        "domain": 1.0
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-017",
+      "description": "Text-statistics row count",
+      "expected": 12,
+      "observed": 12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-018",
+      "description": "Text-statistics key uniqueness",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-019",
+      "description": "County SD uses four counties and ddof=1",
+      "expected": {
+        "ddof": [
+          1
+        ],
+        "n": [
+          4
+        ]
+      },
+      "observed": {
+        "ddof": [
+          1
+        ],
+        "n": [
+          4
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-020",
+      "description": "Weighted object SD is explicitly population-style",
+      "expected": {
+        "ddof": [
+          0
+        ],
+        "n": [
+          1184
+        ]
+      },
+      "observed": {
+        "ddof": [
+          0
+        ],
+        "n": [
+          1184
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-021",
+      "description": "Unweighted object SD uses ddof=1",
+      "expected": {
+        "ddof": [
+          1
+        ],
+        "n": [
+          1184
+        ]
+      },
+      "observed": {
+        "ddof": [
+          1
+        ],
+        "n": [
+          1184
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-022",
+      "description": "All descriptive SDs are finite and non-negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-023",
+      "description": "Required statistical-definition fields are complete",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-024",
+      "description": "Output names are authorized by source contract",
+      "expected": [
+        "figure5_domain_crop_support_source.csv",
+        "figure5_county_crop_support_source.csv",
+        "crop_support_text_statistics.csv",
+        "crop_support_validation.json",
+        "crop_support_execution_record.json"
+      ],
+      "observed": [
+        "figure5_domain_crop_support_source.csv",
+        "figure5_county_crop_support_source.csv",
+        "crop_support_text_statistics.csv",
+        "crop_support_validation.json",
+        "crop_support_execution_record.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-025",
+      "description": "Figure design remains unchanged",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CROP-026",
+      "description": "Scientific boundary is attached to all public records",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    }
+  ],
+  "checks": 26,
+  "failed": 0,
+  "figure_change": false,
+  "module": "crop_support",
+  "passed": 26,
+  "primary_crop_support_threshold": 0.7,
+  "runtime_input_validation": {
+    "checks": 214,
+    "failed": 0,
+    "modules": [
+      "crop_support"
+    ],
+    "passed": 214,
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "scientific_boundary": "Crop-support QA only; fixed-frame comparability only; no ET validation; no pumping estimate; no withdrawal validation; no groundwater attribution; no year-specific object creation; crop fraction is not a direct ET correction factor.",
+  "standard_deviation": {
+    "county": {
+      "ddof": 1,
+      "n_per_year": 4,
+      "observational_unit": "county",
+      "type": "sample standard deviation"
+    },
+    "object_area_weighted": {
+      "ddof": 0,
+      "formula": "sqrt(sum(w*(x-mean_w)^2)/sum(w))",
+      "n_per_year": 1184,
+      "observational_unit": "fixed-frame object",
+      "type": "population-style weighted dispersion",
+      "weights": "fixed_2011_object_area_ha"
+    },
+    "object_unweighted": {
+      "ddof": 1,
+      "n_per_year": 1184,
+      "observational_unit": "fixed-frame object",
+      "role": "secondary diagnostic",
+      "type": "sample standard deviation"
+    }
+  },
+  "status": "PASS",
+  "warnings": 0
+}

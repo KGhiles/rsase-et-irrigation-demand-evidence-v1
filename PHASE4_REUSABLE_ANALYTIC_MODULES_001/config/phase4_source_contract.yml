@@ -1,0 +1,229 @@
+contract_version: "1.4.0"
+phase4_package: "PHASE4_REUSABLE_ANALYTIC_MODULES_001"
+
+purpose: >-
+  Define the only admissible runtime inputs for the reusable analytical
+  modules that reproduce manuscript statistics and figure-source tables.
+  Historical notebooks and original workflow archives are provenance records,
+  not executable dependencies.
+
+runtime_input:
+  package_name: "PHASE3_CURATED_INPUT_LAYER_FINAL_002"
+  accepted_forms:
+    - "extracted_directory"
+    - "zip_archive_extracted_before_analysis"
+  zip_filename: "PHASE3_CURATED_INPUT_LAYER_FINAL_002.zip"
+  zip_sha256: "6b978341a993b3066aedac62c6334498d508299f7a6187eae366ffca51b72bab"
+  root_directory_name: "PHASE3_CURATED_INPUT_LAYER_FINAL_002"
+  version_file:
+    path: "VERSION"
+    sha256: "3f2b3e4a0b30156365e9a2a68f8e229393f50ec4d1ef648eb29933257c8014f6"
+    expected_text: "PHASE3_CURATED_INPUT_LAYER_FINAL_002"
+  package_manifest:
+    path: "package_file_manifest.csv"
+    sha256: "193d061ce4a07968e24f34acf1e829494f236ea8334b263502fa5e95d623d76c"
+  validation_summary:
+    path: "provenance/phase3_validation_summary.json"
+    sha256: "cb15ee1f3c76e30475ad776e913ad9c560b4066cdd6cd7db20900882c6f294cb"
+    accepted_statuses:
+      - "PASS_WITH_DOCUMENTED_GAPS"
+      - "PASS"
+
+runtime_policy:
+  notebooks_are_runtime_inputs: false
+  original_workflow_archives_are_runtime_inputs: false
+  manuscript_text_is_a_numeric_data_source: false
+  hard_coded_manuscript_results_allowed: false
+  absolute_internal_paths_allowed: false
+  inputs_outside_phase3_root_allowed: false
+  scientific_values_must_be_derived_from_curated_inputs: true
+  every_runtime_file_requires_sha256_match: true
+  fail_on_unexpected_input_file: true
+  fail_on_missing_required_input: true
+
+notebook_policy:
+  provenance_only:
+    - "provenance/original_workflows/v42_5/METRIC_daily_integrated_ET_over_season_V42.5_multiple_scenarios-(4).ipynb"
+    - "provenance/original_workflows/v46c/METRIC_daily_integrated_ET_over_season_V46C_Forensics_Targeted_AcceptedScene_Pixel_Mechanism_AuditCLEAN_inventory_first(6).ipynb"
+    - "provenance/original_workflows/v47b1/METRIC_daily_integrated_ET_over_season_V47_B1_RasterExport_RetainedS4_Corn_ET_Peff_IrrigationProxy(7).ipynb"
+    - "provenance/original_workflows/v50/METRIC_daily_integrated_ET_over_season_V50_TrackB_Non2011_ETf_Reconstruction_PumpingProxyReadiness(15).ipynb"
+    - "provenance/original_workflows/awm_figure_assembly/AWM_figures.ipynb"
+  prohibited_actions:
+    - "execute_notebook"
+    - "import_notebook_as_module"
+    - "read_notebook_outputs_as_runtime_data"
+    - "extract_hard_coded_values_from_notebook"
+  allowed_actions:
+    - "retain_checksum_and lineage metadata"
+    - "consult manually during provenance audit"
+
+module_inputs:
+  climate_context:
+    authority: "V47B1 curated climate tables"
+    required_files:
+      - path: "data/derived/climate_context/monthly_climate_context.csv"
+        sha256: "efa851d0322cfc304495e024033e94e4838364bcf85b0af6b1d89d5efc3bc3f6"
+      - path: "data/derived/climate_context/seasonal_climate_context.csv"
+        sha256: "7a429a855fce8aee4e8f98dc58fb27ca0bda7a699d04a44174954a68e58a1f72"
+    allowed_outputs:
+      - "figure2_climate_source.csv"
+      - "figure2_monthly_trajectory_source.csv"
+      - "climate_context_text_statistics.csv"
+      - "climate_context_validation.json"
+      - "climate_context_execution_record.json"
+
+  physical_coherence:
+    authority: "V46C curated scene diagnostics and exact-derived compact raster"
+    required_files:
+      - path: "data/derived/physical_coherence/active_scene_fingerprint.csv"
+        sha256: "dfde37a117769aae69a79e89ebb8614a48236669cd6be36d1a2fdfe005e139ac"
+      - path: "data/derived/physical_coherence/spatial_coherence_figure_source.csv"
+        sha256: "8b64dd0d493f804764c2b889627023e3c904b16cde7a06d76a48dd3f9585c5eb"
+      - path: "data/derived/physical_coherence/physical_coherence_scene_summary.csv"
+        sha256: "a604df5e443e0caacc210a91d4d7605fee5bbab0426904f37d8b0c882ef4f6f3"
+      - path: "data/derived/physical_coherence/representative_scene_plot_ready.tif"
+        sha256: "a2bb65acf377f4d5bc3836563a654e71b4ec612a2ccb4ef46254f49191fdaea8"
+    raster_use_boundary: >-
+      The compact GeoTIFF is a visualization input derived from the exact
+      representative raster. It must not be used as a replacement analytical
+      raster or to recompute full-resolution area statistics.
+    allowed_outputs:
+      - "figure3_scene_fingerprint_source.csv"
+      - "figure3_mechanism_source.csv"
+      - "figure3_spatial_coherence_source.csv"
+      - "physical_coherence_text_statistics.csv"
+      - "physical_coherence_validation.json"
+      - "physical_coherence_execution_record.json"
+
+  aerodynamic_sensitivity:
+    authority: "V42.5 curated sensitivity outputs"
+    required_files:
+      - path: "data/derived/aerodynamic_sensitivity/figure4_scope_summary.csv"
+        sha256: "bb28825af4cfd3bcf0bc4af7a075e2f9dd6d356fac0a6c6190c4d21731119f84"
+      - path: "data/derived/aerodynamic_sensitivity/figure4_etrf_scenario_envelopes.csv"
+        sha256: "8580aafa4f93fb792ad9a44e138b6c59e83e5c671a3a6049900568313e432485"
+      - path: "data/derived/aerodynamic_sensitivity/figure4_sensible_heat_scenario_envelopes.csv"
+        sha256: "be62e6b298f5f1ba7972004185beee585a3d14ebaa22b364b19f3a75ccb67d39"
+      - path: "data/derived/aerodynamic_sensitivity/figure4_peak_county_month_sensitivity.csv"
+        sha256: "5622087ee8d292d45444a1ae59df4533afbdd10cf8d3672d1a7b1f8eeb040779"
+      - path: "data/derived/aerodynamic_sensitivity/table3_aerodynamic_sensitivity.csv"
+        sha256: "13bf81ca894f46c96cc03f1eeaf6ba4392d3378dd945857fd1e74417a53dbb44"
+    allowed_outputs:
+      - "figure4_aerodynamic_source.csv"
+      - "figure4_peak_sensitivity_source.csv"
+      - "table3_aerodynamic_summary.csv"
+      - "aerodynamic_sensitivity_text_statistics.csv"
+      - "aerodynamic_sensitivity_validation.json"
+      - "aerodynamic_sensitivity_execution_record.json"
+
+  crop_support:
+    authority: "V47B2 curated fixed-frame CDL support"
+    required_files:
+      - path: "data/derived/crop_support/fixed_frame_object_year_crop_support.csv"
+        sha256: "528854d42a191ffa0bd96ace61b3f3b00f8d8ef08996be960d14ec23e712f4de"
+      - path: "data/derived/crop_support/county_year_crop_support.csv"
+        sha256: "88103fc1852d9e38efc3870d805908be2abcee417d83616ee38b975a6be8dc64"
+      - path: "data/derived/crop_support/domain_year_crop_support.csv"
+        sha256: "fa136001045f44206e51f2912053096b7b8f11bd2aa78aeb591879c30780213f"
+    allowed_outputs:
+      - "figure5_domain_crop_support_source.csv"
+      - "figure5_county_crop_support_source.csv"
+      - "crop_support_text_statistics.csv"
+      - "crop_support_validation.json"
+      - "crop_support_execution_record.json"
+
+  fixed_frame_dominance:
+    authority: "V47 clean-object curated sensitivity outputs"
+    required_files:
+      - path: "data/derived/fixed_frame_dominance/four_year_vs_non2011_sensitivity.csv"
+        sha256: "211a49a19a22e27dfe2038e1ddb2a2a2978d3bdfc71287d2e8262af7d00623d2"
+      - path: "data/derived/fixed_frame_dominance/object_2011_dominance.csv"
+        sha256: "1ff7441441798f52a2bad40909f3dd6058ba511610276bfde7242044b935654c"
+    allowed_outputs:
+      - "figure6_fixed_frame_sensitivity_source.csv"
+      - "figure6_dominance_class_source.csv"
+      - "fixed_frame_dominance_text_statistics.csv"
+      - "fixed_frame_dominance_validation.json"
+      - "fixed_frame_dominance_execution_record.json"
+
+  known_cold_reference:
+    authority: "V51 strict ACES curated QA and Supplementary Methods S1"
+    required_files:
+      - path: "data/derived/known_cold_reference/strict_mask_by_raster.csv"
+        sha256: "0d818f59b2ab3911f6514ba96cd2ff99e10615cc1d26fa4b7261155769c38ba8"
+      - path: "data/derived/known_cold_reference/strict_county_raster_counts.csv"
+        sha256: "2783f0cd0eab76813656cac717d6e9b8f64a26747bc19a0b1dea931592bf4287"
+      - path: "data/derived/known_cold_reference/county_radius_response_summary.csv"
+        sha256: "7c2b2c8dc2f40f9c145db457e7917b3cf380e006fd69f9b91ef8fc6daaa666d7"
+      - path: "data/derived/known_cold_reference/strict_processing_funnel.csv"
+        sha256: "61b571edfb2aceae6255c5f55553d717eed883a084b81d03cbb19a87d4b36a65"
+      - path: "data/derived/supplementary/table_s4_known_cold_solver_parameters.csv"
+        sha256: "f5e48a51dcd343e565ce144c5d91bbe89d9a79258b1d761990245d019fdced84"
+      - path: "data/derived/supplementary/Supplementary_Methods_S1.md"
+        sha256: "0133ead00178228b481d3fc291a433484cceae7007327eb2747e219fe266f186"
+    scientific_boundary: >-
+      Known-cold outputs are diagnostic reference-sensitivity evidence. They
+      are not corrected ET, validation ET, a replacement production product,
+      pumping evidence, or groundwater-withdrawal evidence.
+    allowed_outputs:
+      - "figure7_processing_funnel_source.csv"
+      - "figure7_county_radius_source.csv"
+      - "figure7_mask_response_source.csv"
+      - "known_cold_reference_text_statistics.csv"
+      - "known_cold_reference_validation.json"
+      - "known_cold_reference_execution_record.json"
+
+  interpretation_classes:
+    authority: "Phase 2 final 003 with narrow V50 HLS authority"
+    required_files:
+      - path: "data/derived/interpretation_classes/interpretation_classes.json"
+        sha256: "4163714fbbc0ef20825c859f1a153c6b922e017cbab6e2be3ce3281e7adcb45e"
+      - path: "data/derived/interpretation_classes/non2011_hls_temporal_support_evidence.json"
+        sha256: "35a0c6e5988c00aab7834e0b5eab9d3e585dfc6b23c93767c64232864bb3e514"
+      - path: "data/derived/interpretation_classes/interpretation_classification.csv"
+        sha256: "b5dc590ca788a777af14ab22b9f4f3bfff986c8932e956e7001a65b22e433647"
+    v50_scope:
+      allowed_only_for:
+        - "4196 object-years"
+        - "26085 accepted-anchor intervals"
+        - "17 HLS temporal bins"
+        - "71332 HLS object-bin records"
+        - "non-2011 Class I candidate row"
+      prohibited_for:
+        - "2011 physical coherence"
+        - "aerodynamic sensitivity"
+        - "fixed-frame dominance"
+        - "known-cold reference sensitivity"
+        - "pumping or groundwater-withdrawal inference"
+    classification_guardrails:
+      class_i_candidate_is_completed_class_i: false
+      completed_class_i_assignment_present: false
+      hls_is_et_validation: false
+      hls_is_pumping_validation: false
+    allowed_outputs:
+      - "figure8_interpretation_source.csv"
+      - "figure8_evidence_matrix_source.csv"
+      - "interpretation_classes_text_statistics.csv"
+      - "interpretation_classes_validation.json"
+      - "interpretation_classes_execution_record.json"
+
+prohibited_runtime_tokens:
+  - "V46D"
+  - "V48"
+  - "V49"
+  - "102 logical frames"
+  - "69 valid frames"
+  - "/scratch/user/"
+  - "/content/drive/"
+
+output_policy:
+  runtime_results_root: "results"
+  each_module_writes_only_its_allowed_outputs: true
+  overwrite_requires_explicit_flag: true
+  output_manifest_required: true
+  output_sha256_required: true
+  deterministic_sorting_required: true
+  index_columns_in_public_csv_allowed: false
+  floating_point_rounding:
+    storage_precision: "full available precision"
+    display_precision: "defined by Phase 5 plotting code"

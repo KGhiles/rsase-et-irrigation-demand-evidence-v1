@@ -1,0 +1,65 @@
+{
+  "module": "climate_context",
+  "status": "PASS",
+  "checks": 7,
+  "passed": 7,
+  "failed": 0,
+  "standard_deviation": {
+    "type": "sample standard deviation",
+    "ddof": 1,
+    "recommended_text_basis": "county-season values: n=4 for 2011; n=12 for 2015, 2017, and 2023",
+    "alternative_temporal_basis": "three comparison-year domain means: n=3"
+  },
+  "figure_change": false,
+  "check_results": [
+    {
+      "check_id": "CLIM-001",
+      "description": "Phase 3 runtime input validation",
+      "status": "PASS",
+      "observed": "PASS",
+      "expected": "PASS"
+    },
+    {
+      "check_id": "CLIM-002",
+      "description": "Seasonal figure-source rows",
+      "status": "PASS",
+      "observed": 80,
+      "expected": 80
+    },
+    {
+      "check_id": "CLIM-003",
+      "description": "Monthly trajectory rows",
+      "status": "PASS",
+      "observed": 150,
+      "expected": 150
+    },
+    {
+      "check_id": "CLIM-004",
+      "description": "Text-statistic rows",
+      "status": "PASS",
+      "observed": 5,
+      "expected": 5
+    },
+    {
+      "check_id": "CLIM-005",
+      "description": "All reported SDs are finite and non-negative",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check_id": "CLIM-006",
+      "description": "Standard-deviation convention",
+      "status": "PASS",
+      "observed": 1,
+      "expected": 1
+    },
+    {
+      "check_id": "CLIM-007",
+      "description": "Figure design remains unchanged",
+      "status": "PASS",
+      "observed": "no plotting code; mean columns preserved; SD columns are additive",
+      "expected": "no figure change"
+    }
+  ]
+}

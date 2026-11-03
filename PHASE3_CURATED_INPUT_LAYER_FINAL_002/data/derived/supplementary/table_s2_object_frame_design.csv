@@ -1,0 +1,3 @@
+frame,years_applied,construction_basis,purpose,interpretation_scope
+Fixed 2011 retained-object,2011;2015;2017;2023,2011 CDL corn classification and retained-object support,Quantify year-composition influence over a constant spatial population,Stress-year dominance; not year-specific crop support
+Year-specific retained-object,2015;2017;2023,Each year's CDL corn classification,Evaluate whether comparison-year summaries are corn-supported,Crop-specific irrigation-demand interpretation where corn fraction meets threshold

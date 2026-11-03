@@ -1,0 +1,2 @@
+workflow,study_years,object_years,accepted_anchor_intervals,hls_temporal_bins,hls_object_bin_records,identity_check,hls_role,interpretation_status,completed_class_I_assignment,source_notebook_sha256,source_evidence_member_sha256
+V50 non-2011 year-specific reconstruction,2015;2017;2023,4196,26085,17,71332,4196 * 17 = 71332,canopy-trajectory and interpolation-plausibility QA,Class I candidate,False,3456c9af48413f44e30b09d48bb6003727195642cd030adc84d1b2bf41d93f0d,4208def3e69e0ff26de80618cc5a950a5cde35d137b220264efbdecc10b728b0

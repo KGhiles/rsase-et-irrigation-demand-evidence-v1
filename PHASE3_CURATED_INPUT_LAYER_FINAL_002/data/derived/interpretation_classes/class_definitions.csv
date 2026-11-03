@@ -1,0 +1,5 @@
+class_id,designation,condition,supported_use
+I,Proxy-eligible condition,crop-supported; accepted; coherent; explicit accounting; valid frame and scale; acceptable sensitivity,proxy under stated assumptions
+II,Stress-test condition,coherent but stress-year dominated or reference-sensitive,stress-test diagnostic
+III,Crop-support-limited condition,weak or inconsistent concurrent crop support,landscape/crop-support diagnostic
+IV,Non-interpretable condition,required source or diagnostic support unavailable or invalid,excluded from the affected unsupported interpretation

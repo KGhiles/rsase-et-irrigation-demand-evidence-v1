@@ -1,0 +1,113 @@
+{
+  "authorized_inputs": {
+    "data/derived/known_cold_reference/county_radius_response_summary.csv": {
+      "sha256": "7c2b2c8dc2f40f9c145db457e7917b3cf380e006fd69f9b91ef8fc6daaa666d7"
+    },
+    "data/derived/known_cold_reference/strict_county_raster_counts.csv": {
+      "sha256": "2783f0cd0eab76813656cac717d6e9b8f64a26747bc19a0b1dea931592bf4287"
+    },
+    "data/derived/known_cold_reference/strict_mask_by_raster.csv": {
+      "sha256": "0d818f59b2ab3911f6514ba96cd2ff99e10615cc1d26fa4b7261155769c38ba8"
+    },
+    "data/derived/known_cold_reference/strict_processing_funnel.csv": {
+      "sha256": "61b571edfb2aceae6255c5f55553d717eed883a084b81d03cbb19a87d4b36a65"
+    },
+    "data/derived/supplementary/Supplementary_Methods_S1.md": {
+      "sha256": "0133ead00178228b481d3fc291a433484cceae7007327eb2747e219fe266f186"
+    },
+    "data/derived/supplementary/table_s4_known_cold_solver_parameters.csv": {
+      "sha256": "f5e48a51dcd343e565ce144c5d91bbe89d9a79258b1d761990245d019fdced84"
+    }
+  },
+  "command_template": [
+    "python",
+    "-m",
+    "qstable_awm.known_cold_reference",
+    "--phase3-root",
+    "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "--output-dir",
+    "results/known_cold_reference",
+    "--contract",
+    "config/phase4_source_contract.yml"
+  ],
+  "contract_relative_path": "config/phase4_source_contract.yml",
+  "contract_sha256": "b701177f25c7c758e50880bbf63901ba95d0d1e4bc7dc03d7af4038e4e8ff725",
+  "derived_output_validation": {
+    "checks": 52,
+    "failed": 0,
+    "passed": 52,
+    "status": "PASS",
+    "warnings": 0
+  },
+  "determinism_note": "Outputs derive only from six frozen Phase 3 inputs; full-resolution rasters remain external and are not opened. Rows and columns are explicitly ordered.",
+  "figure_change": false,
+  "module": "known_cold_reference",
+  "module_relative_path": "src/qstable_awm/known_cold_reference.py",
+  "module_sha256": "21b8019c04d8f618cc91c2e8bc41fc7ec060d01a57b41892b7d37397035f11cd",
+  "outputs": {
+    "figure7_county_radius_source.csv": {
+      "sha256": "f9a5bd32d5daca44631dfee5c16d9eb23a3cf06012ec935244be061fc9fafc77",
+      "size_bytes": 2419
+    },
+    "figure7_mask_response_source.csv": {
+      "sha256": "0ddc6eeedee16cec00c465a177451834dfd8dfd6adac78ee2219362deea000a1",
+      "size_bytes": 7337
+    },
+    "figure7_processing_funnel_source.csv": {
+      "sha256": "106ec36d533a32f1cf065a0d789c8170e295f33208849c8c07e2704c88c186d1",
+      "size_bytes": 1227
+    },
+    "known_cold_reference_text_statistics.csv": {
+      "sha256": "ab9f7e48b854bcb4e739ee063b93fd0b3a7163265c702cd314027d2c69812188",
+      "size_bytes": 8635
+    },
+    "known_cold_reference_validation.json": {
+      "sha256": "729d5a659b1c2f372926147597056ef81509d39f79198d268fb22df1927aa27e",
+      "size_bytes": 15039
+    }
+  },
+  "phase3_package": "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+  "record_version": "1.0.0",
+  "runtime_input_validation": {
+    "checks": 922,
+    "failed": 0,
+    "modules": [
+      "known_cold_reference"
+    ],
+    "passed": 922,
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "scientific_boundary": "Diagnostic known-cold reference sensitivity only; accepted METRIC remains the production record; no corrected ET; no observed or validation ET; no pumping or groundwater-withdrawal evidence; no water-source attribution.",
+  "solver_authority": {
+    "main_thermal_separation_gate_K": 6.5,
+    "material_response_threshold_mm_d": 1.0,
+    "minimum_source_pixels": 30,
+    "parameter_table": "data/derived/supplementary/table_s4_known_cold_solver_parameters.csv",
+    "primary_source_statistic": "median",
+    "same_date_source_only": true,
+    "supplementary_method": "data/derived/supplementary/Supplementary_Methods_S1.md"
+  },
+  "statistical_decisions": {
+    "primary": {
+      "ddof": 1,
+      "interpretation": "descriptive grouped spread only",
+      "n_per_support_domain": 4,
+      "observational_unit": "county-radius group median",
+      "type": "sample standard deviation"
+    },
+    "secondary": {
+      "ddof": 1,
+      "interpretation": "secondary diagnostic spread only",
+      "n": {
+        "active_canopy": 39,
+        "large_ETrF": 39,
+        "mechanism_evidence": 38,
+        "valid_output": 39
+      },
+      "observational_unit": "strict raster-radius record median",
+      "type": "sample standard deviation"
+    }
+  }
+}

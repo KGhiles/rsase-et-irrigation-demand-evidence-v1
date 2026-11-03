@@ -1,0 +1,21 @@
+{
+  "script": "V51_parallel_raster_QA.py",
+  "finished_utc": "2026-06-25T22:28:58.431888+00:00",
+  "raster_dir": "source://rasters",
+  "out_dir": "source://V51_ACES_raster_QA",
+  "raster_count": 39,
+  "workers": 12,
+  "boundary": {
+    "diagnostic_reference_sensitivity_only": true,
+    "corrected_ET": false,
+    "ET_validation": false,
+    "pumping_or_withdrawal_estimate": false,
+    "QStable_validation": false
+  },
+  "outputs": [
+    "V51_raster_QA_summary.csv",
+    "V51_band_audit.csv",
+    "V51_county_radius_response_summary.csv",
+    "figure_4_6_tables"
+  ]
+}

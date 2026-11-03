@@ -1,0 +1,458 @@
+{
+  "check_results": [
+    {
+      "check_id": "INT-001",
+      "description": "Runtime-input validator status",
+      "expected": "PASS",
+      "observed": "PASS",
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-002",
+      "description": "Runtime-input validator failures",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-003",
+      "description": "Corrected Phase 2 Figure 8 authority",
+      "expected": "PHASE2_FIGURE8_PUBLICATION_FINAL_003",
+      "observed": "PHASE2_FIGURE8_PUBLICATION_FINAL_003",
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-004",
+      "description": "Frozen classification rows",
+      "expected": 4,
+      "observed": 4,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-005",
+      "description": "Figure 8 interpretation rows",
+      "expected": 4,
+      "observed": 4,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-006",
+      "description": "Figure 8 condition uniqueness",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-007",
+      "description": "Figure 8 condition order",
+      "expected": [
+        "2011 active-canopy large-ETrF scenes",
+        "Fixed 2011 frame in later years",
+        "Known-cold source unavailable",
+        "Non-2011 year-specific reconstruction workflow"
+      ],
+      "observed": [
+        "2011 active-canopy large-ETrF scenes",
+        "Fixed 2011 frame in later years",
+        "Known-cold source unavailable",
+        "Non-2011 year-specific reconstruction workflow"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-008",
+      "description": "Accepted condition-to-class assignments",
+      "expected": {
+        "2011 active-canopy large-ETrF scenes": "Class II",
+        "Fixed 2011 frame in later years": "Class III",
+        "Known-cold source unavailable": "Class IV",
+        "Non-2011 year-specific reconstruction workflow": "Class I candidate"
+      },
+      "observed": {
+        "2011 active-canopy large-ETrF scenes": "Class II",
+        "Fixed 2011 frame in later years": "Class III",
+        "Known-cold source unavailable": "Class IV",
+        "Non-2011 year-specific reconstruction workflow": "Class I candidate"
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-009",
+      "description": "Exactly one Class I candidate",
+      "expected": 1,
+      "observed": 1,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-010",
+      "description": "Zero completed Class I assignments",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-011",
+      "description": "Evidence matrix rows",
+      "expected": 32,
+      "observed": 32,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-012",
+      "description": "Evidence matrix key uniqueness",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-013",
+      "description": "Eight evidence dimensions per condition",
+      "expected": {
+        "2011 active-canopy large-ETrF scenes": 8,
+        "Fixed 2011 frame in later years": 8,
+        "Known-cold source unavailable": 8,
+        "Non-2011 year-specific reconstruction workflow": 8
+      },
+      "observed": {
+        "2011 active-canopy large-ETrF scenes": 8,
+        "Fixed 2011 frame in later years": 8,
+        "Known-cold source unavailable": 8,
+        "Non-2011 year-specific reconstruction workflow": 8
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-014",
+      "description": "Evidence-status counts",
+      "expected": {
+        "conditional": 8,
+        "invalid": 9,
+        "material": 3,
+        "supported": 12
+      },
+      "observed": {
+        "conditional": 8,
+        "invalid": 9,
+        "material": 3,
+        "supported": 12
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-015",
+      "description": "Evidence-code labels",
+      "expected": {
+        "E1": "Crop",
+        "E2": "Scene",
+        "E3": "Physical",
+        "E4": "P/Peff",
+        "E5": "Object",
+        "E6": "Reference",
+        "E7": "Scale",
+        "E8": "Status"
+      },
+      "observed": {
+        "E1": "Crop",
+        "E2": "Scene",
+        "E3": "Physical",
+        "E4": "P/Peff",
+        "E5": "Object",
+        "E6": "Reference",
+        "E7": "Scale",
+        "E8": "Status"
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-016",
+      "description": "No completed Class I evidence rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-017",
+      "description": "Candidate row contains eight evidence cells",
+      "expected": 8,
+      "observed": 8,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-018",
+      "description": "Class I-candidate evidence remains conditional",
+      "expected": {
+        "E1": "supported",
+        "E2": "supported",
+        "E3": "supported",
+        "E4": "supported",
+        "E5": "supported",
+        "E6": "conditional",
+        "E7": "supported",
+        "E8": "conditional"
+      },
+      "observed": {
+        "E1": "supported",
+        "E2": "supported",
+        "E3": "supported",
+        "E4": "supported",
+        "E5": "supported",
+        "E6": "conditional",
+        "E7": "supported",
+        "E8": "conditional"
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-019",
+      "description": "V50 object-years",
+      "expected": 4196,
+      "observed": 4196,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-020",
+      "description": "V50 accepted-anchor intervals",
+      "expected": 26085,
+      "observed": 26085,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-021",
+      "description": "HLS temporal bins",
+      "expected": 17,
+      "observed": 17,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-022",
+      "description": "HLS object-bin records",
+      "expected": 71332,
+      "observed": 71332,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-023",
+      "description": "HLS object-bin identity",
+      "expected": 71332,
+      "observed": 71332,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-024",
+      "description": "Non-2011 HLS study years",
+      "expected": [
+        2015,
+        2017,
+        2023
+      ],
+      "observed": [
+        2015,
+        2017,
+        2023
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-025",
+      "description": "HLS role remains support-only",
+      "expected": "canopy-trajectory and interpolation-plausibility QA",
+      "observed": "canopy-trajectory and interpolation-plausibility QA",
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-026",
+      "description": "HLS prohibition set",
+      "expected": [
+        "ET validation",
+        "direct ETa conversion",
+        "direct ETrF conversion",
+        "groundwater withdrawal",
+        "irrigation application",
+        "pumping",
+        "water-source attribution"
+      ],
+      "observed": [
+        "ET validation",
+        "direct ETa conversion",
+        "direct ETrF conversion",
+        "groundwater withdrawal",
+        "irrigation application",
+        "pumping",
+        "water-source attribution"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-027",
+      "description": "HLS does not complete Class I",
+      "expected": false,
+      "observed": false,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-028",
+      "description": "V50 notebook remains provenance-only",
+      "expected": "3456c9af48413f44e30b09d48bb6003727195642cd030adc84d1b2bf41d93f0d",
+      "observed": "3456c9af48413f44e30b09d48bb6003727195642cd030adc84d1b2bf41d93f0d",
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-029",
+      "description": "V50 evidence-member hash",
+      "expected": "4208def3e69e0ff26de80618cc5a950a5cde35d137b220264efbdecc10b728b0",
+      "observed": "4208def3e69e0ff26de80618cc5a950a5cde35d137b220264efbdecc10b728b0",
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-030",
+      "description": "Text/evidence-statistics rows",
+      "expected": 15,
+      "observed": 15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-031",
+      "description": "Text-statistics definition columns",
+      "expected": [
+        "ddof",
+        "interpretation_boundary",
+        "maximum",
+        "mean",
+        "median",
+        "minimum",
+        "n",
+        "observational_unit",
+        "standard_deviation",
+        "statistic",
+        "unit"
+      ],
+      "observed": [
+        "ddof",
+        "interpretation_boundary",
+        "maximum",
+        "mean",
+        "median",
+        "minimum",
+        "n",
+        "observational_unit",
+        "standard_deviation",
+        "statistic",
+        "unit"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-032",
+      "description": "No fabricated standard deviation",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-033",
+      "description": "SD explicitly marked not applicable",
+      "expected": [
+        "not_applicable"
+      ],
+      "observed": [
+        "not_applicable"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-034",
+      "description": "Text class-assignment counts",
+      "expected": {
+        "Class I candidate": 1,
+        "Class II": 1,
+        "Class III": 1,
+        "Class IV": 1
+      },
+      "observed": {
+        "Class I candidate": 1,
+        "Class II": 1,
+        "Class III": 1,
+        "Class IV": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-035",
+      "description": "Text completed-Class-I count",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-036",
+      "description": "Text evidence-status counts",
+      "expected": {
+        "conditional": 8,
+        "invalid": 9,
+        "material": 3,
+        "supported": 12
+      },
+      "observed": {
+        "conditional": 8,
+        "invalid": 9,
+        "material": 3,
+        "supported": 12
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-037",
+      "description": "Output names authorized by source contract",
+      "expected": [
+        "figure8_evidence_matrix_source.csv",
+        "figure8_interpretation_source.csv",
+        "interpretation_classes_execution_record.json",
+        "interpretation_classes_text_statistics.csv",
+        "interpretation_classes_validation.json"
+      ],
+      "observed": [
+        "figure8_evidence_matrix_source.csv",
+        "figure8_interpretation_source.csv",
+        "interpretation_classes_execution_record.json",
+        "interpretation_classes_text_statistics.csv",
+        "interpretation_classes_validation.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-038",
+      "description": "Figure 8 design unchanged",
+      "expected": false,
+      "observed": false,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-039",
+      "description": "Scientific inference boundary",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "INT-040",
+      "description": "No prohibited or obsolete authority in outputs",
+      "expected": [],
+      "observed": [],
+      "status": "PASS"
+    }
+  ],
+  "checks": 40,
+  "failed": 0,
+  "figure_change": false,
+  "module": "interpretation_classes",
+  "passed": 40,
+  "scientific_boundary": "Interpretation-support classification only; Class I candidate is not completed Class I; HLS is temporal-support QA only; no corrected ET; no ET validation; no irrigation application; no pumping; no pumping validation; no groundwater-withdrawal validation; no groundwater attribution; no water-source attribution.",
+  "standard_deviation": {
+    "ddof": "not_applicable",
+    "reason": "Figure 8 inputs are deterministic categorical assignments and inventory counts; no scientifically defensible replicate numerical unit exists.",
+    "reported_instead": "counts and percentages by class and evidence status",
+    "status": "not_applicable"
+  },
+  "status": "PASS",
+  "warnings": 0
+}

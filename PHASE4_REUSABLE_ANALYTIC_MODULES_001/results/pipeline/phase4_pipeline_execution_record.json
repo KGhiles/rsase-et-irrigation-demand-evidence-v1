@@ -1,0 +1,411 @@
+{
+  "atomic_commit": true,
+  "authorized_inputs": {
+    "data/derived/aerodynamic_sensitivity/figure4_etrf_scenario_envelopes.csv": {
+      "sha256": "8580aafa4f93fb792ad9a44e138b6c59e83e5c671a3a6049900568313e432485"
+    },
+    "data/derived/aerodynamic_sensitivity/figure4_peak_county_month_sensitivity.csv": {
+      "sha256": "5622087ee8d292d45444a1ae59df4533afbdd10cf8d3672d1a7b1f8eeb040779"
+    },
+    "data/derived/aerodynamic_sensitivity/figure4_scope_summary.csv": {
+      "sha256": "bb28825af4cfd3bcf0bc4af7a075e2f9dd6d356fac0a6c6190c4d21731119f84"
+    },
+    "data/derived/aerodynamic_sensitivity/figure4_sensible_heat_scenario_envelopes.csv": {
+      "sha256": "be62e6b298f5f1ba7972004185beee585a3d14ebaa22b364b19f3a75ccb67d39"
+    },
+    "data/derived/aerodynamic_sensitivity/table3_aerodynamic_sensitivity.csv": {
+      "sha256": "13bf81ca894f46c96cc03f1eeaf6ba4392d3378dd945857fd1e74417a53dbb44"
+    },
+    "data/derived/climate_context/monthly_climate_context.csv": {
+      "sha256": "efa851d0322cfc304495e024033e94e4838364bcf85b0af6b1d89d5efc3bc3f6"
+    },
+    "data/derived/climate_context/seasonal_climate_context.csv": {
+      "sha256": "7a429a855fce8aee4e8f98dc58fb27ca0bda7a699d04a44174954a68e58a1f72"
+    },
+    "data/derived/crop_support/county_year_crop_support.csv": {
+      "sha256": "88103fc1852d9e38efc3870d805908be2abcee417d83616ee38b975a6be8dc64"
+    },
+    "data/derived/crop_support/domain_year_crop_support.csv": {
+      "sha256": "fa136001045f44206e51f2912053096b7b8f11bd2aa78aeb591879c30780213f"
+    },
+    "data/derived/crop_support/fixed_frame_object_year_crop_support.csv": {
+      "sha256": "528854d42a191ffa0bd96ace61b3f3b00f8d8ef08996be960d14ec23e712f4de"
+    },
+    "data/derived/fixed_frame_dominance/four_year_vs_non2011_sensitivity.csv": {
+      "sha256": "211a49a19a22e27dfe2038e1ddb2a2a2978d3bdfc71287d2e8262af7d00623d2"
+    },
+    "data/derived/fixed_frame_dominance/object_2011_dominance.csv": {
+      "sha256": "1ff7441441798f52a2bad40909f3dd6058ba511610276bfde7242044b935654c"
+    },
+    "data/derived/interpretation_classes/interpretation_classes.json": {
+      "sha256": "4163714fbbc0ef20825c859f1a153c6b922e017cbab6e2be3ce3281e7adcb45e"
+    },
+    "data/derived/interpretation_classes/interpretation_classification.csv": {
+      "sha256": "b5dc590ca788a777af14ab22b9f4f3bfff986c8932e956e7001a65b22e433647"
+    },
+    "data/derived/interpretation_classes/non2011_hls_temporal_support_evidence.json": {
+      "sha256": "35a0c6e5988c00aab7834e0b5eab9d3e585dfc6b23c93767c64232864bb3e514"
+    },
+    "data/derived/known_cold_reference/county_radius_response_summary.csv": {
+      "sha256": "7c2b2c8dc2f40f9c145db457e7917b3cf380e006fd69f9b91ef8fc6daaa666d7"
+    },
+    "data/derived/known_cold_reference/strict_county_raster_counts.csv": {
+      "sha256": "2783f0cd0eab76813656cac717d6e9b8f64a26747bc19a0b1dea931592bf4287"
+    },
+    "data/derived/known_cold_reference/strict_mask_by_raster.csv": {
+      "sha256": "0d818f59b2ab3911f6514ba96cd2ff99e10615cc1d26fa4b7261155769c38ba8"
+    },
+    "data/derived/known_cold_reference/strict_processing_funnel.csv": {
+      "sha256": "61b571edfb2aceae6255c5f55553d717eed883a084b81d03cbb19a87d4b36a65"
+    },
+    "data/derived/physical_coherence/active_scene_fingerprint.csv": {
+      "sha256": "dfde37a117769aae69a79e89ebb8614a48236669cd6be36d1a2fdfe005e139ac"
+    },
+    "data/derived/physical_coherence/physical_coherence_scene_summary.csv": {
+      "sha256": "a604df5e443e0caacc210a91d4d7605fee5bbab0426904f37d8b0c882ef4f6f3"
+    },
+    "data/derived/physical_coherence/representative_scene_plot_ready.tif": {
+      "sha256": "a2bb65acf377f4d5bc3836563a654e71b4ec612a2ccb4ef46254f49191fdaea8"
+    },
+    "data/derived/physical_coherence/spatial_coherence_figure_source.csv": {
+      "sha256": "8b64dd0d493f804764c2b889627023e3c904b16cde7a06d76a48dd3f9585c5eb"
+    },
+    "data/derived/supplementary/Supplementary_Methods_S1.md": {
+      "sha256": "0133ead00178228b481d3fc291a433484cceae7007327eb2747e219fe266f186"
+    },
+    "data/derived/supplementary/table_s4_known_cold_solver_parameters.csv": {
+      "sha256": "f5e48a51dcd343e565ce144c5d91bbe89d9a79258b1d761990245d019fdced84"
+    }
+  },
+  "command_template": [
+    "python",
+    "-m",
+    "qstable_awm.pipeline",
+    "--phase3-root",
+    "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "--results-root",
+    "results",
+    "--contract",
+    "config/phase4_source_contract.yml",
+    "--overwrite"
+  ],
+  "contract_relative_path": "config/phase4_source_contract.yml",
+  "contract_sha256": "b701177f25c7c758e50880bbf63901ba95d0d1e4bc7dc03d7af4038e4e8ff725",
+  "dry_run": false,
+  "execution_plan": [
+    {
+      "authorized_inputs": [
+        "data/derived/climate_context/monthly_climate_context.csv",
+        "data/derived/climate_context/seasonal_climate_context.csv"
+      ],
+      "authorized_outputs": [
+        "figure2_climate_source.csv",
+        "figure2_monthly_trajectory_source.csv",
+        "climate_context_text_statistics.csv",
+        "climate_context_validation.json",
+        "climate_context_execution_record.json"
+      ],
+      "module": "climate_context",
+      "order": 1,
+      "output_directory": "results/climate_context",
+      "source": "src/qstable_awm/climate_context.py"
+    },
+    {
+      "authorized_inputs": [
+        "data/derived/physical_coherence/active_scene_fingerprint.csv",
+        "data/derived/physical_coherence/spatial_coherence_figure_source.csv",
+        "data/derived/physical_coherence/physical_coherence_scene_summary.csv",
+        "data/derived/physical_coherence/representative_scene_plot_ready.tif"
+      ],
+      "authorized_outputs": [
+        "figure3_scene_fingerprint_source.csv",
+        "figure3_mechanism_source.csv",
+        "figure3_spatial_coherence_source.csv",
+        "physical_coherence_text_statistics.csv",
+        "physical_coherence_validation.json",
+        "physical_coherence_execution_record.json"
+      ],
+      "module": "physical_coherence",
+      "order": 2,
+      "output_directory": "results/physical_coherence",
+      "source": "src/qstable_awm/physical_coherence.py"
+    },
+    {
+      "authorized_inputs": [
+        "data/derived/aerodynamic_sensitivity/figure4_scope_summary.csv",
+        "data/derived/aerodynamic_sensitivity/figure4_etrf_scenario_envelopes.csv",
+        "data/derived/aerodynamic_sensitivity/figure4_sensible_heat_scenario_envelopes.csv",
+        "data/derived/aerodynamic_sensitivity/figure4_peak_county_month_sensitivity.csv",
+        "data/derived/aerodynamic_sensitivity/table3_aerodynamic_sensitivity.csv"
+      ],
+      "authorized_outputs": [
+        "figure4_aerodynamic_source.csv",
+        "figure4_peak_sensitivity_source.csv",
+        "table3_aerodynamic_summary.csv",
+        "aerodynamic_sensitivity_text_statistics.csv",
+        "aerodynamic_sensitivity_validation.json",
+        "aerodynamic_sensitivity_execution_record.json"
+      ],
+      "module": "aerodynamic_sensitivity",
+      "order": 3,
+      "output_directory": "results/aerodynamic_sensitivity",
+      "source": "src/qstable_awm/aerodynamic_sensitivity.py"
+    },
+    {
+      "authorized_inputs": [
+        "data/derived/crop_support/fixed_frame_object_year_crop_support.csv",
+        "data/derived/crop_support/county_year_crop_support.csv",
+        "data/derived/crop_support/domain_year_crop_support.csv"
+      ],
+      "authorized_outputs": [
+        "figure5_domain_crop_support_source.csv",
+        "figure5_county_crop_support_source.csv",
+        "crop_support_text_statistics.csv",
+        "crop_support_validation.json",
+        "crop_support_execution_record.json"
+      ],
+      "module": "crop_support",
+      "order": 4,
+      "output_directory": "results/crop_support",
+      "source": "src/qstable_awm/crop_support.py"
+    },
+    {
+      "authorized_inputs": [
+        "data/derived/fixed_frame_dominance/four_year_vs_non2011_sensitivity.csv",
+        "data/derived/fixed_frame_dominance/object_2011_dominance.csv"
+      ],
+      "authorized_outputs": [
+        "figure6_fixed_frame_sensitivity_source.csv",
+        "figure6_dominance_class_source.csv",
+        "fixed_frame_dominance_text_statistics.csv",
+        "fixed_frame_dominance_validation.json",
+        "fixed_frame_dominance_execution_record.json"
+      ],
+      "module": "fixed_frame_dominance",
+      "order": 5,
+      "output_directory": "results/fixed_frame_dominance",
+      "source": "src/qstable_awm/fixed_frame_dominance.py"
+    },
+    {
+      "authorized_inputs": [
+        "data/derived/known_cold_reference/strict_mask_by_raster.csv",
+        "data/derived/known_cold_reference/strict_county_raster_counts.csv",
+        "data/derived/known_cold_reference/county_radius_response_summary.csv",
+        "data/derived/known_cold_reference/strict_processing_funnel.csv",
+        "data/derived/supplementary/table_s4_known_cold_solver_parameters.csv",
+        "data/derived/supplementary/Supplementary_Methods_S1.md"
+      ],
+      "authorized_outputs": [
+        "figure7_processing_funnel_source.csv",
+        "figure7_county_radius_source.csv",
+        "figure7_mask_response_source.csv",
+        "known_cold_reference_text_statistics.csv",
+        "known_cold_reference_validation.json",
+        "known_cold_reference_execution_record.json"
+      ],
+      "module": "known_cold_reference",
+      "order": 6,
+      "output_directory": "results/known_cold_reference",
+      "source": "src/qstable_awm/known_cold_reference.py"
+    },
+    {
+      "authorized_inputs": [
+        "data/derived/interpretation_classes/interpretation_classes.json",
+        "data/derived/interpretation_classes/non2011_hls_temporal_support_evidence.json",
+        "data/derived/interpretation_classes/interpretation_classification.csv"
+      ],
+      "authorized_outputs": [
+        "figure8_interpretation_source.csv",
+        "figure8_evidence_matrix_source.csv",
+        "interpretation_classes_text_statistics.csv",
+        "interpretation_classes_validation.json",
+        "interpretation_classes_execution_record.json"
+      ],
+      "module": "interpretation_classes",
+      "order": 7,
+      "output_directory": "results/interpretation_classes",
+      "source": "src/qstable_awm/interpretation_classes.py"
+    }
+  ],
+  "module_order": [
+    "climate_context",
+    "physical_coherence",
+    "aerodynamic_sensitivity",
+    "crop_support",
+    "fixed_frame_dominance",
+    "known_cold_reference",
+    "interpretation_classes"
+  ],
+  "module_sources": {
+    "aerodynamic_sensitivity": {
+      "path": "src/qstable_awm/aerodynamic_sensitivity.py",
+      "sha256": "c68a14e337a9f8ffb0de234b74458d9433097a0ff21faf17a127ecc0dd14860d"
+    },
+    "climate_context": {
+      "path": "src/qstable_awm/climate_context.py",
+      "sha256": "7d5e2e9d9fff10a3dfbf857d8ca9d4e9641fa73ad06d720f69d757bc28e4776b"
+    },
+    "crop_support": {
+      "path": "src/qstable_awm/crop_support.py",
+      "sha256": "bdcd46573985ebe923136e15fa96599675b581c3470f5234f8c5218196bac0b9"
+    },
+    "fixed_frame_dominance": {
+      "path": "src/qstable_awm/fixed_frame_dominance.py",
+      "sha256": "35f0209d2ec1ac861066c4975ec28cc317a5b11bf324a21de392f83f48355f94"
+    },
+    "interpretation_classes": {
+      "path": "src/qstable_awm/interpretation_classes.py",
+      "sha256": "63031d26ac250803855c3237ff89139551a3d310f15e389d8930444bf65fe799"
+    },
+    "known_cold_reference": {
+      "path": "src/qstable_awm/known_cold_reference.py",
+      "sha256": "21b8019c04d8f618cc91c2e8bc41fc7ec060d01a57b41892b7d37397035f11cd"
+    },
+    "physical_coherence": {
+      "path": "src/qstable_awm/physical_coherence.py",
+      "sha256": "ec36da70eb15b29296c1501da5c531b5e84fb92f5b355b885ce85f54858d7e05"
+    }
+  },
+  "module_validation": [
+    {
+      "derived_validation": {
+        "checks": 7,
+        "failed": 0,
+        "passed": 7,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "2018c3a99eac7553f7c277dd1f0e1acba80bdf969ab01ac31583eb9243ffcc85",
+      "module": "climate_context",
+      "output_count": 5,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 10,
+        "failed": 0,
+        "passed": 10,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "52e550e11817a3575291a159f4e432ed90421a9592d783047cc3ccc51427e99b",
+      "module": "physical_coherence",
+      "output_count": 6,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 16,
+        "failed": 0,
+        "passed": 16,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "04b8c0847d4ba30d76edebe48a9e94e68e51b3352e2ea3c6d4ac9f78ec1b0bb0",
+      "module": "aerodynamic_sensitivity",
+      "output_count": 6,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 26,
+        "failed": 0,
+        "passed": 26,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "15789fb3a7dd5bcd6f0702a462ec17fc82fc441d7ac8732a3b7ee99f59b86572",
+      "module": "crop_support",
+      "output_count": 5,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 30,
+        "failed": 0,
+        "passed": 30,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "7875dc0ada9f6a3a3b823a217b41462b6e244993bc2c4a952feeb42528a5ed44",
+      "module": "fixed_frame_dominance",
+      "output_count": 5,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 52,
+        "failed": 0,
+        "passed": 52,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "4764ea0842af11fdff15a28cb3cdb2eedebce8a7007d3e23c4ecb11bcb4820be",
+      "module": "known_cold_reference",
+      "output_count": 6,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 40,
+        "failed": 0,
+        "passed": 40,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "2ac2e998fa1d6cc581e2f69fabc02bedcf440dad0fda5f3b09fe11d23098116c",
+      "module": "interpretation_classes",
+      "output_count": 5,
+      "status": "PASS"
+    }
+  ],
+  "notebook_runtime_dependency": false,
+  "output_manifest": {
+    "relative_path": "pipeline/phase4_pipeline_output_manifest.csv",
+    "rows": 38,
+    "sha256": "014d5682e49cbbf0f70eb4e2f6c02dacfd92d64ebbea6b1a0fcaa21a6cc82d14"
+  },
+  "phase3_file_count": 172,
+  "phase3_modified": false,
+  "phase3_package": "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+  "phase3_root_name": "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+  "phase3_tree_sha256": "b74edffd081bba5962cda93f9696fa43d4ceab42028ac1db65c996556360421f",
+  "pipeline_relative_path": "src/qstable_awm/pipeline.py",
+  "pipeline_sha256": "4561d939e2257574c279677e1c21d0dd491c9b1147313efad0a872370e0421b3",
+  "pipeline_validation": {
+    "relative_path": "pipeline/phase4_pipeline_validation.json",
+    "sha256": "e4349aa1b189efb482cc8d8377728bf288c1f402044d3db545b4ac799e7e7f3b"
+  },
+  "preflight_validation": {
+    "checks": 1708,
+    "contract_path": "/mnt/data/qstable_phase4_work/PHASE4_REUSABLE_ANALYTIC_MODULES_001/config/phase4_source_contract.yml",
+    "failed": 0,
+    "modules": [
+      "climate_context",
+      "physical_coherence",
+      "aerodynamic_sensitivity",
+      "crop_support",
+      "fixed_frame_dominance",
+      "known_cold_reference",
+      "interpretation_classes"
+    ],
+    "passed": 1708,
+    "phase3_root": "/mnt/data/qstable_phase4_work/PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "record_version": "1.0.0",
+  "runtime_results_root": "results",
+  "scientific_boundary": "Orchestration and reproducibility metadata only. Scientific values remain those produced and validated by the seven analytical modules.",
+  "selected_modules": [
+    "climate_context",
+    "physical_coherence",
+    "aerodynamic_sensitivity",
+    "crop_support",
+    "fixed_frame_dominance",
+    "known_cold_reference",
+    "interpretation_classes"
+  ],
+  "timestamp_policy": "omitted_for_deterministic_outputs"
+}

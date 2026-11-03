@@ -1,0 +1,241 @@
+{
+  "check_results": [
+    {
+      "check_id": "PIPE-001",
+      "description": "Complete Phase 3 validation passed before execution",
+      "expected": "PASS",
+      "observed": "PASS",
+      "status": "PASS"
+    },
+    {
+      "check_id": "PIPE-002",
+      "description": "Complete Phase 3 validation had zero failures",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "PIPE-003",
+      "description": "Selected modules follow the frozen execution order",
+      "expected": [
+        "climate_context",
+        "physical_coherence",
+        "aerodynamic_sensitivity",
+        "crop_support",
+        "fixed_frame_dominance",
+        "known_cold_reference",
+        "interpretation_classes"
+      ],
+      "observed": [
+        "climate_context",
+        "physical_coherence",
+        "aerodynamic_sensitivity",
+        "crop_support",
+        "fixed_frame_dominance",
+        "known_cold_reference",
+        "interpretation_classes"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "PIPE-004",
+      "description": "Every selected module passed output validation",
+      "expected": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "observed": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "PIPE-005",
+      "description": "Output manifest row count matches the source contract",
+      "expected": 38,
+      "observed": 38,
+      "status": "PASS"
+    },
+    {
+      "check_id": "PIPE-006",
+      "description": "Output manifest paths are unique",
+      "expected": 38,
+      "observed": 38,
+      "status": "PASS"
+    },
+    {
+      "check_id": "PIPE-007",
+      "description": "Every manifest hash is a lowercase SHA-256 digest",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "PIPE-008",
+      "description": "Phase 3 tree remained byte-identical",
+      "expected": "b74edffd081bba5962cda93f9696fa43d4ceab42028ac1db65c996556360421f",
+      "observed": "b74edffd081bba5962cda93f9696fa43d4ceab42028ac1db65c996556360421f",
+      "status": "PASS"
+    },
+    {
+      "check_id": "PIPE-009",
+      "description": "No prohibited runtime file-access dependencies were detected",
+      "expected": {},
+      "observed": {},
+      "status": "PASS"
+    },
+    {
+      "check_id": "PIPE-010",
+      "description": "Every selected module execution record uses the active contract",
+      "expected": "7 validated execution records",
+      "observed": [
+        "2018c3a99eac7553f7c277dd1f0e1acba80bdf969ab01ac31583eb9243ffcc85",
+        "52e550e11817a3575291a159f4e432ed90421a9592d783047cc3ccc51427e99b",
+        "04b8c0847d4ba30d76edebe48a9e94e68e51b3352e2ea3c6d4ac9f78ec1b0bb0",
+        "15789fb3a7dd5bcd6f0702a462ec17fc82fc441d7ac8732a3b7ee99f59b86572",
+        "7875dc0ada9f6a3a3b823a217b41462b6e244993bc2c4a952feeb42528a5ed44",
+        "4764ea0842af11fdff15a28cb3cdb2eedebce8a7007d3e23c4ecb11bcb4820be",
+        "2ac2e998fa1d6cc581e2f69fabc02bedcf440dad0fda5f3b09fe11d23098116c"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "checks": 10,
+  "failed": 0,
+  "module_validation": [
+    {
+      "derived_validation": {
+        "checks": 7,
+        "failed": 0,
+        "passed": 7,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "2018c3a99eac7553f7c277dd1f0e1acba80bdf969ab01ac31583eb9243ffcc85",
+      "module": "climate_context",
+      "output_count": 5,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 10,
+        "failed": 0,
+        "passed": 10,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "52e550e11817a3575291a159f4e432ed90421a9592d783047cc3ccc51427e99b",
+      "module": "physical_coherence",
+      "output_count": 6,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 16,
+        "failed": 0,
+        "passed": 16,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "04b8c0847d4ba30d76edebe48a9e94e68e51b3352e2ea3c6d4ac9f78ec1b0bb0",
+      "module": "aerodynamic_sensitivity",
+      "output_count": 6,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 26,
+        "failed": 0,
+        "passed": 26,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "15789fb3a7dd5bcd6f0702a462ec17fc82fc441d7ac8732a3b7ee99f59b86572",
+      "module": "crop_support",
+      "output_count": 5,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 30,
+        "failed": 0,
+        "passed": 30,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "7875dc0ada9f6a3a3b823a217b41462b6e244993bc2c4a952feeb42528a5ed44",
+      "module": "fixed_frame_dominance",
+      "output_count": 5,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 52,
+        "failed": 0,
+        "passed": 52,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "4764ea0842af11fdff15a28cb3cdb2eedebce8a7007d3e23c4ecb11bcb4820be",
+      "module": "known_cold_reference",
+      "output_count": 6,
+      "status": "PASS"
+    },
+    {
+      "derived_validation": {
+        "checks": 40,
+        "failed": 0,
+        "passed": 40,
+        "status": "PASS",
+        "warnings": 0
+      },
+      "execution_record_sha256": "2ac2e998fa1d6cc581e2f69fabc02bedcf440dad0fda5f3b09fe11d23098116c",
+      "module": "interpretation_classes",
+      "output_count": 5,
+      "status": "PASS"
+    }
+  ],
+  "passed": 10,
+  "pipeline_validation_version": "1.0.0",
+  "preflight_validation": {
+    "checks": 1708,
+    "contract_path": "/mnt/data/qstable_phase4_work/PHASE4_REUSABLE_ANALYTIC_MODULES_001/config/phase4_source_contract.yml",
+    "failed": 0,
+    "modules": [
+      "climate_context",
+      "physical_coherence",
+      "aerodynamic_sensitivity",
+      "crop_support",
+      "fixed_frame_dominance",
+      "known_cold_reference",
+      "interpretation_classes"
+    ],
+    "passed": 1708,
+    "phase3_root": "/mnt/data/qstable_phase4_work/PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "selected_modules": [
+    "climate_context",
+    "physical_coherence",
+    "aerodynamic_sensitivity",
+    "crop_support",
+    "fixed_frame_dominance",
+    "known_cold_reference",
+    "interpretation_classes"
+  ],
+  "status": "PASS",
+  "warnings": 0
+}

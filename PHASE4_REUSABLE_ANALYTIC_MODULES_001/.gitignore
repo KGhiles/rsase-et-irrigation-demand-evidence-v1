@@ -1,0 +1,77 @@
+# Python bytecode and interpreter caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test, coverage, type-checker, and linter caches
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+junit.xml
+
+# Python build and installation artifacts
+build/
+dist/
+.eggs/
+*.egg
+*.egg-info/
+pip-wheel-metadata/
+
+# Local virtual and Conda environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Editor and operating-system artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Notebook transient state; notebooks themselves are not ignored
+.ipynb_checkpoints/
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+
+# Q-Stable local validation reports and atomic pipeline scratch trees
+validation_reports/
+.qstable-validation.*/
+.phase4-pipeline-staging-*/
+.phase4-pipeline-backup-*/
+results_candidate/
+results_candidate_*/
+
+# Frozen Phase 3 data are distributed separately and must not be committed
+PHASE3_CURATED_INPUT_LAYER_FINAL_002/
+PHASE3_CURATED_INPUT_LAYER_FINAL_002.zip
+PHASE3_CURA.zip
+
+# Local HPC scheduler output
+slurm-*.out
+slurm-*.err
+*.sbatch.out
+*.sbatch.err
+
+# Generic temporary and backup files
+*.tmp
+*.temp
+*.bak
+
+# Canonical release outputs under results/ are intentionally tracked.

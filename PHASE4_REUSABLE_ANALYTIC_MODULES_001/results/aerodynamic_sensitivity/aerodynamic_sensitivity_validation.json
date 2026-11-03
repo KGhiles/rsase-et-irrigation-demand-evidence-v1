@@ -1,0 +1,161 @@
+{
+  "module": "aerodynamic_sensitivity",
+  "status": "PASS",
+  "checks": 16,
+  "passed": 16,
+  "warnings": 0,
+  "failed": 0,
+  "standard_deviation": {
+    "type": "sample standard deviation",
+    "ddof": 1,
+    "basis": "non-BASE county-crop-month-scenario summaries within each scope",
+    "scope_n": {
+      "all_crops_all_months_nonBASE": 288,
+      "corn_all_months_nonBASE": 144,
+      "corn_peak_JulAug_nonBASE": 48
+    },
+    "interpretation": "descriptive spread, not ET uncertainty or validation"
+  },
+  "figure_change": false,
+  "scientific_boundary": "Aerodynamic perturbations are diagnostic only; no corrected or alternative ET product is promoted.",
+  "check_results": [
+    {
+      "check_id": "AERO-001",
+      "description": "Phase 3 runtime validation",
+      "status": "PASS",
+      "observed": "PASS",
+      "expected": "PASS"
+    },
+    {
+      "check_id": "AERO-002",
+      "description": "Figure 4 raw-source rows",
+      "status": "PASS",
+      "observed": 288,
+      "expected": 288
+    },
+    {
+      "check_id": "AERO-003",
+      "description": "Peak county-month rows",
+      "status": "PASS",
+      "observed": 8,
+      "expected": 8
+    },
+    {
+      "check_id": "AERO-004",
+      "description": "Table 3 summary rows",
+      "status": "PASS",
+      "observed": 3,
+      "expected": 3
+    },
+    {
+      "check_id": "AERO-005",
+      "description": "Text-statistics rows",
+      "status": "PASS",
+      "observed": 30,
+      "expected": 30
+    },
+    {
+      "check_id": "AERO-006",
+      "description": "Scope counts",
+      "status": "PASS",
+      "observed": {
+        "all_crops_all_months_nonBASE": 288,
+        "corn_all_months_nonBASE": 144,
+        "corn_peak_JulAug_nonBASE": 48
+      },
+      "expected": {
+        "all_crops_all_months_nonBASE": 288,
+        "corn_all_months_nonBASE": 144,
+        "corn_peak_JulAug_nonBASE": 48
+      }
+    },
+    {
+      "check_id": "AERO-007",
+      "description": "ETf scenario quantiles reproduce frozen source",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check_id": "AERO-008",
+      "description": "H scenario quantiles reproduce frozen source",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check_id": "AERO-009",
+      "description": "All peak county-month ETf responses below 0.01",
+      "status": "PASS",
+      "observed": 0.0060984693236338,
+      "expected": "<0.01"
+    },
+    {
+      "check_id": "AERO-010",
+      "description": "All sample SDs finite and non-negative",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check_id": "AERO-011",
+      "description": "Sample-SD convention",
+      "status": "PASS",
+      "observed": 1,
+      "expected": 1
+    },
+    {
+      "check_id": "AERO-012",
+      "description": "Output names authorized by source contract",
+      "status": "PASS",
+      "observed": [
+        "aerodynamic_sensitivity_execution_record.json",
+        "aerodynamic_sensitivity_text_statistics.csv",
+        "aerodynamic_sensitivity_validation.json",
+        "figure4_aerodynamic_source.csv",
+        "figure4_peak_sensitivity_source.csv",
+        "table3_aerodynamic_summary.csv"
+      ],
+      "expected": [
+        "aerodynamic_sensitivity_execution_record.json",
+        "aerodynamic_sensitivity_text_statistics.csv",
+        "aerodynamic_sensitivity_validation.json",
+        "figure4_aerodynamic_source.csv",
+        "figure4_peak_sensitivity_source.csv",
+        "table3_aerodynamic_summary.csv"
+      ]
+    },
+    {
+      "check_id": "AERO-013",
+      "description": "Figure design unchanged",
+      "status": "PASS",
+      "observed": false,
+      "expected": false
+    },
+    {
+      "check_id": "AERO-014",
+      "description": "No corrected ET product is produced",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check_id": "AERO-015",
+      "description": "Text-statistics fields are explicit",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check_id": "AERO-016",
+      "description": "Text statistics use declared observational unit",
+      "status": "PASS",
+      "observed": [
+        "non-BASE county-crop-month-scenario summary"
+      ],
+      "expected": [
+        "non-BASE county-crop-month-scenario summary"
+      ]
+    }
+  ]
+}

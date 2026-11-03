@@ -1,0 +1,327 @@
+{
+  "accepted_population": {
+    "classifiable_objects": 1140,
+    "fixed_frame_area_ha": 121673.50879146729,
+    "insufficient_data_objects": 44,
+    "low_2011_dominance_objects": 1,
+    "retained_objects": 1184,
+    "strong_2011_dominance_objects": 1139
+  },
+  "check_results": [
+    {
+      "check_id": "FFD-001",
+      "description": "Runtime-input validator status",
+      "expected": "PASS",
+      "observed": "PASS",
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-002",
+      "description": "Runtime-input validator failures",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-003",
+      "description": "Frozen sensitivity row count",
+      "expected": 80,
+      "observed": 80,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-004",
+      "description": "Frozen object population",
+      "expected": 1184,
+      "observed": 1184,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-005",
+      "description": "Figure 6 sensitivity row count",
+      "expected": 12,
+      "observed": 12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-006",
+      "description": "Figure 6 county-metric key uniqueness",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-007",
+      "description": "Figure 6 county set",
+      "expected": [
+        "DALLAM",
+        "HARTLEY",
+        "MOORE",
+        "OCHILTREE"
+      ],
+      "observed": [
+        "DALLAM",
+        "HARTLEY",
+        "MOORE",
+        "OCHILTREE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-008",
+      "description": "Figure 6 metric set",
+      "expected": [
+        "ETa",
+        "NIR",
+        "Qgross_depth"
+      ],
+      "observed": [
+        "ETa",
+        "NIR",
+        "Qgross_depth"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-009",
+      "description": "Figure 6 track remains penalized median",
+      "expected": [
+        "penalized_median"
+      ],
+      "observed": [
+        "penalized_median"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-010",
+      "description": "Figure 6 efficiency-scenario filter",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-011",
+      "description": "Figure 6 full-minus-reduced identity",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-012",
+      "description": "Figure 6 signed percentage-change identity",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-013",
+      "description": "All selected Figure 6 percentage changes are reductions",
+      "expected": "<0",
+      "observed": -17.440115983190676,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-014",
+      "description": "Dominance source row count",
+      "expected": 3,
+      "observed": 3,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-015",
+      "description": "Accepted dominance-class counts",
+      "expected": {
+        "insufficient_data": 44,
+        "low_2011_dominance": 1,
+        "strong_2011_dominance": 1139
+      },
+      "observed": {
+        "insufficient_data": 44,
+        "low_2011_dominance": 1,
+        "strong_2011_dominance": 1139
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-016",
+      "description": "Dominance counts reconcile retained population",
+      "expected": 1184,
+      "observed": 1184,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-017",
+      "description": "Classifiable object population",
+      "expected": 1140,
+      "observed": 1140,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-018",
+      "description": "Strong dominance fraction across all objects",
+      "expected": 96.19932432432432,
+      "observed": 96.19932432432432,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-019",
+      "description": "Strong dominance fraction across classifiable objects",
+      "expected": 99.91228070175438,
+      "observed": 99.91228070175438,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-020",
+      "description": "Fixed-frame area is derived from the frozen object table",
+      "expected": 121673.50879146729,
+      "observed": 121673.50879146729,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-021",
+      "description": "Dominance-class areas reconcile frozen fixed-frame area",
+      "expected": 121673.50879146729,
+      "observed": 121673.50879146729,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-022",
+      "description": "Text-statistics row count",
+      "expected": 18,
+      "observed": 18,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-023",
+      "description": "Text-statistics key uniqueness",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-024",
+      "description": "County SD uses n=4 and ddof=1",
+      "expected": {
+        "ddof": [
+          1
+        ],
+        "n": [
+          4
+        ]
+      },
+      "observed": {
+        "ddof": [
+          1
+        ],
+        "n": [
+          4
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-025",
+      "description": "Object SD uses n=1,140 and ddof=1",
+      "expected": {
+        "ddof": [
+          1
+        ],
+        "n": [
+          1140
+        ]
+      },
+      "observed": {
+        "ddof": [
+          1
+        ],
+        "n": [
+          1140
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-026",
+      "description": "All descriptive SDs are finite and non-negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-027",
+      "description": "Required statistical-definition fields are complete",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-028",
+      "description": "Output names are authorized by source contract",
+      "expected": [
+        "figure6_fixed_frame_sensitivity_source.csv",
+        "figure6_dominance_class_source.csv",
+        "fixed_frame_dominance_text_statistics.csv",
+        "fixed_frame_dominance_validation.json",
+        "fixed_frame_dominance_execution_record.json"
+      ],
+      "observed": [
+        "figure6_fixed_frame_sensitivity_source.csv",
+        "figure6_dominance_class_source.csv",
+        "fixed_frame_dominance_text_statistics.csv",
+        "fixed_frame_dominance_validation.json",
+        "fixed_frame_dominance_execution_record.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-029",
+      "description": "Figure design remains unchanged",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "FFD-030",
+      "description": "Scientific boundary is attached to all public records",
+      "expected": true,
+      "observed": true,
+      "status": "PASS"
+    }
+  ],
+  "checks": 30,
+  "failed": 0,
+  "figure_change": false,
+  "module": "fixed_frame_dominance",
+  "passed": 30,
+  "runtime_input_validation": {
+    "checks": 115,
+    "failed": 0,
+    "modules": [
+      "fixed_frame_dominance"
+    ],
+    "passed": 115,
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "scientific_boundary": "Fixed-frame stress-year sensitivity only; removal of 2011 is not a corrected product or uncertainty bound; no ET validation; no observed pumping; no pumping validation; no groundwater-withdrawal validation; no groundwater attribution; no county-wide pumping estimate; no persistent year-specific corn water-use inference.",
+  "standard_deviation": {
+    "county": {
+      "ddof": 1,
+      "n_per_metric_variable": 4,
+      "observational_unit": "county",
+      "type": "sample standard deviation"
+    },
+    "object": {
+      "ddof": 1,
+      "excluded_null_objects": 44,
+      "n_per_metric_variable": 1140,
+      "observational_unit": "fixed-frame object",
+      "role": "secondary object-level diagnostic",
+      "type": "sample standard deviation"
+    }
+  },
+  "status": "PASS",
+  "warnings": 0
+}

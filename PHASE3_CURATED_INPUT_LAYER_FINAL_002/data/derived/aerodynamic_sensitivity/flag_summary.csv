@@ -1,0 +1,9 @@
+flag,n_rows
+flag_p50_missing,0
+flag_crop_empty,0
+flag_invalid_anchor,0
+flag_invalid_solve,0
+flag_bad_Ts_position,0
+flag_LE_fraction_outside_broad_range,0
+flag_alt_ETf_mean_outside_clamp,0
+any_flag,0

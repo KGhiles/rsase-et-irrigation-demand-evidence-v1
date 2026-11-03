@@ -1,0 +1,83 @@
+{
+  "authorized_inputs": {
+    "data/derived/fixed_frame_dominance/four_year_vs_non2011_sensitivity.csv": {
+      "sha256": "211a49a19a22e27dfe2038e1ddb2a2a2978d3bdfc71287d2e8262af7d00623d2"
+    },
+    "data/derived/fixed_frame_dominance/object_2011_dominance.csv": {
+      "sha256": "1ff7441441798f52a2bad40909f3dd6058ba511610276bfde7242044b935654c"
+    }
+  },
+  "command_template": [
+    "python",
+    "-m",
+    "qstable_awm.fixed_frame_dominance",
+    "--phase3-root",
+    "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "--output-dir",
+    "results/fixed_frame_dominance",
+    "--contract",
+    "config/phase4_source_contract.yml"
+  ],
+  "contract_relative_path": "config/phase4_source_contract.yml",
+  "contract_sha256": "b701177f25c7c758e50880bbf63901ba95d0d1e4bc7dc03d7af4038e4e8ff725",
+  "derived_output_validation": {
+    "checks": 30,
+    "failed": 0,
+    "passed": 30,
+    "status": "PASS",
+    "warnings": 0
+  },
+  "determinism_note": "Numerical outputs derive only from the two frozen Phase 3 tables; rows and columns are explicitly ordered.",
+  "figure_change": false,
+  "module": "fixed_frame_dominance",
+  "module_relative_path": "src/qstable_awm/fixed_frame_dominance.py",
+  "module_sha256": "35f0209d2ec1ac861066c4975ec28cc317a5b11bf324a21de392f83f48355f94",
+  "outputs": {
+    "figure6_dominance_class_source.csv": {
+      "sha256": "136b852aec206343454e8e90e600f1b01c29a0573dc92112430893c0b6124392",
+      "size_bytes": 1690
+    },
+    "figure6_fixed_frame_sensitivity_source.csv": {
+      "sha256": "804134a4923370545af3fd899ee8464e3fac87fb5fd03399246e9c4659005232",
+      "size_bytes": 7292
+    },
+    "fixed_frame_dominance_text_statistics.csv": {
+      "sha256": "09281405e2840ab4552dd8665586cc7c6a9ae0e317a1deafcbfddda8c9af93df",
+      "size_bytes": 11859
+    },
+    "fixed_frame_dominance_validation.json": {
+      "sha256": "06b3247c985b3a34d72bb7472ecc083eb17e80a6502c0b10022e8882811ab347",
+      "size_bytes": 8193
+    }
+  },
+  "phase3_package": "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+  "record_version": "1.0.0",
+  "runtime_input_validation": {
+    "checks": 115,
+    "failed": 0,
+    "modules": [
+      "fixed_frame_dominance"
+    ],
+    "passed": 115,
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "scientific_boundary": "Fixed-frame stress-year sensitivity only; removal of 2011 is not a corrected product or uncertainty bound; no ET validation; no observed pumping; no pumping validation; no groundwater-withdrawal validation; no groundwater attribution; no county-wide pumping estimate; no persistent year-specific corn water-use inference.",
+  "statistical_decisions": {
+    "county": {
+      "ddof": 1,
+      "n_per_metric_variable": 4,
+      "observational_unit": "county",
+      "type": "sample standard deviation"
+    },
+    "object": {
+      "ddof": 1,
+      "excluded_null_objects": 44,
+      "n_per_metric_variable": 1140,
+      "observational_unit": "fixed-frame object",
+      "role": "secondary object-level diagnostic",
+      "type": "sample standard deviation"
+    }
+  }
+}

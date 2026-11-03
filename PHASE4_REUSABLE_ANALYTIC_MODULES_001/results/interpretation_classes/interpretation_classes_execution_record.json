@@ -1,0 +1,95 @@
+{
+  "authorized_inputs": {
+    "data/derived/interpretation_classes/interpretation_classes.json": {
+      "sha256": "4163714fbbc0ef20825c859f1a153c6b922e017cbab6e2be3ce3281e7adcb45e"
+    },
+    "data/derived/interpretation_classes/interpretation_classification.csv": {
+      "sha256": "b5dc590ca788a777af14ab22b9f4f3bfff986c8932e956e7001a65b22e433647"
+    },
+    "data/derived/interpretation_classes/non2011_hls_temporal_support_evidence.json": {
+      "sha256": "35a0c6e5988c00aab7834e0b5eab9d3e585dfc6b23c93767c64232864bb3e514"
+    }
+  },
+  "classification_guardrails": {
+    "candidate_is_completed_class_I": false,
+    "class_I_candidate_count": 1,
+    "completed_class_I_assignment_count": 0
+  },
+  "command_template": [
+    "python",
+    "-m",
+    "qstable_awm.interpretation_classes",
+    "--phase3-root",
+    "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "--output-dir",
+    "results/interpretation_classes",
+    "--contract",
+    "config/phase4_source_contract.yml"
+  ],
+  "contract_relative_path": "config/phase4_source_contract.yml",
+  "contract_sha256": "b701177f25c7c758e50880bbf63901ba95d0d1e4bc7dc03d7af4038e4e8ff725",
+  "derived_output_validation": {
+    "checks": 40,
+    "failed": 0,
+    "passed": 40,
+    "status": "PASS",
+    "warnings": 0
+  },
+  "determinism_note": "Outputs derive only from three frozen Phase 3 inputs; rows and columns are explicitly ordered and no notebook is executed.",
+  "figure_change": false,
+  "module": "interpretation_classes",
+  "module_relative_path": "src/qstable_awm/interpretation_classes.py",
+  "module_sha256": "63031d26ac250803855c3237ff89139551a3d310f15e389d8930444bf65fe799",
+  "outputs": {
+    "figure8_evidence_matrix_source.csv": {
+      "sha256": "0f96118efcdd623cc88eccc7113b656efbcbc41153ce65f9efbae4ebc9af5e9b",
+      "size_bytes": 18402
+    },
+    "figure8_interpretation_source.csv": {
+      "sha256": "e30f20b2e6dcdc4e75c578d0b66846048c87fce0dc4ab06abc035e2e15e33d1d",
+      "size_bytes": 2712
+    },
+    "interpretation_classes_text_statistics.csv": {
+      "sha256": "285c9b86459f0c7859a92c6ecd0d2039f1e0c6de6500617509e99eec303b1d38",
+      "size_bytes": 9150
+    },
+    "interpretation_classes_validation.json": {
+      "sha256": "20b56f302c1f665076b484a8b626a3b4d2f07dc12711e75e5bdcb19c369f8898",
+      "size_bytes": 12229
+    }
+  },
+  "phase2_figure8_authority": "PHASE2_FIGURE8_PUBLICATION_FINAL_003",
+  "phase3_package": "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+  "record_version": "1.0.0",
+  "runtime_input_validation": {
+    "checks": 68,
+    "failed": 0,
+    "modules": [
+      "interpretation_classes"
+    ],
+    "passed": 68,
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "scientific_boundary": "Interpretation-support classification only; Class I candidate is not completed Class I; HLS is temporal-support QA only; no corrected ET; no ET validation; no irrigation application; no pumping; no pumping validation; no groundwater-withdrawal validation; no groundwater attribution; no water-source attribution.",
+  "statistical_decisions": {
+    "ddof": "not_applicable",
+    "reason": "Figure 8 inputs are deterministic categorical assignments and inventory counts; no scientifically defensible replicate numerical unit exists.",
+    "reported_instead": "counts and percentages by class and evidence status",
+    "status": "not_applicable"
+  },
+  "v50_narrow_authority": {
+    "accepted_anchor_intervals": 26085,
+    "completed_class_I_assignment": false,
+    "hls_object_bin_records": 71332,
+    "hls_role": "canopy-trajectory and interpolation-plausibility QA",
+    "hls_temporal_bins": 17,
+    "object_years": 4196,
+    "study_years": [
+      2015,
+      2017,
+      2023
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "release_version": "1.0.0",
+  "review_date_utc": "2026-11-03",
+  "runtime_validation": {
+    "status": "PASS",
+    "checks": 1708,
+    "passed": 1708,
+    "failed": 0,
+    "warnings": 0
+  },
+  "reproduction": {
+    "status": "PASS",
+    "seven_modules": "PASS",
+    "source_csv_files": 24,
+    "source_csv_byte_identical": 24
+  },
+  "phase4_internal_release_audit": {
+    "status": "PASS",
+    "checks": 15,
+    "passed": 15,
+    "failed": 0
+  },
+  "frozen_science": {
+    "derived_phase3_data_files": 78,
+    "modified_scientific_input_files": 0,
+    "modified_python_source_files": 0,
+    "modified_frozen_scientific_csv_files": 0
+  },
+  "release_scans": {
+    "targeted_identity_matches": 0,
+    "formulaic_prose_patterns": 0,
+    "docx_internal_xml_scanned": true
+  },
+  "regression_tests": {
+    "complete_run_status": "NOT_CONFIRMED",
+    "historical_reported_passes": 637,
+    "current_partial_run_passes_before_first_legacy_failure": 432,
+    "identified_failure": "test expects complete 172-file historical Phase 3 archive; public curated archive has 81 files"
+  },
+  "geographic_disclosure": {
+    "precision_fields": [
+      "centroid_x",
+      "centroid_y",
+      "bounds"
+    ],
+    "source_file_count": 2,
+    "coauthor_review_required": true
+  },
+  "license_status": {
+    "software": "MIT file included",
+    "original_derived_material": "CC BY 4.0 terms included",
+    "remaining": "confirm rights holder, original PRISM access date, and coauthor public-distribution approval"
+  },
+  "upstream_regeneration": "NOT_INCLUDED; see DATA_AND_REPOSITORY_LIMITS.md",
+  "archive_status": "ZIP_CRC_AND_FRESH_EXTRACTION_CHECKSUM_PASS"
+}

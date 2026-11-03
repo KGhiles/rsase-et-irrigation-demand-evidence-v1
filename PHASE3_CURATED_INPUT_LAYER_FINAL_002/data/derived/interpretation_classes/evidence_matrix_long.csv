@@ -1,0 +1,33 @@
+analysis_condition,evidence_code,evidence_value,status,final_class,supported_interpretation
+2011 active-canopy large-ETrF scenes,E1,Supported,supported,Class II,Stress-test diagnostic
+2011 active-canopy large-ETrF scenes,E2,Accepted,supported,Class II,Stress-test diagnostic
+2011 active-canopy large-ETrF scenes,E3,Coherent,supported,Class II,Stress-test diagnostic
+2011 active-canopy large-ETrF scenes,E4,Explicit,supported,Class II,Stress-test diagnostic
+2011 active-canopy large-ETrF scenes,E5,2011-dominated,material,Class II,Stress-test diagnostic
+2011 active-canopy large-ETrF scenes,E6,Material sensitivity,material,Class II,Stress-test diagnostic
+2011 active-canopy large-ETrF scenes,E7,Scene/object,supported,Class II,Stress-test diagnostic
+2011 active-canopy large-ETrF scenes,E8,Diagnostic,material,Class II,Stress-test diagnostic
+Fixed 2011 frame in later years,E1,Weak/mixed,conditional,Class III,Landscape/crop-support diagnostic
+Fixed 2011 frame in later years,E2,Comparison-year QA,conditional,Class III,Landscape/crop-support diagnostic
+Fixed 2011 frame in later years,E3,Not crop-specific,conditional,Class III,Landscape/crop-support diagnostic
+Fixed 2011 frame in later years,E4,Explicit,supported,Class III,Landscape/crop-support diagnostic
+Fixed 2011 frame in later years,E5,Fixed 2011 geometry,conditional,Class III,Landscape/crop-support diagnostic
+Fixed 2011 frame in later years,E6,Not evaluated,invalid,Class III,Landscape/crop-support diagnostic
+Fixed 2011 frame in later years,E7,Fixed landscape,conditional,Class III,Landscape/crop-support diagnostic
+Fixed 2011 frame in later years,E8,Diagnostic,conditional,Class III,Landscape/crop-support diagnostic
+Known-cold source unavailable,E1,N/A,invalid,Class IV,Excluded from strict reference-sensitivity analysis
+Known-cold source unavailable,E2,No concurrent source,invalid,Class IV,Excluded from strict reference-sensitivity analysis
+Known-cold source unavailable,E3,N/A,invalid,Class IV,Excluded from strict reference-sensitivity analysis
+Known-cold source unavailable,E4,N/A,invalid,Class IV,Excluded from strict reference-sensitivity analysis
+Known-cold source unavailable,E5,N/A,invalid,Class IV,Excluded from strict reference-sensitivity analysis
+Known-cold source unavailable,E6,Not estimable,invalid,Class IV,Excluded from strict reference-sensitivity analysis
+Known-cold source unavailable,E7,County scope excluded,invalid,Class IV,Excluded from strict reference-sensitivity analysis
+Known-cold source unavailable,E8,Excluded,invalid,Class IV,Excluded from strict reference-sensitivity analysis
+Non-2011 year-specific reconstruction workflow,E1,Year-specific,supported,Class I candidate,Proxy candidate after QA
+Non-2011 year-specific reconstruction workflow,E2,Accepted anchors,supported,Class I candidate,Proxy candidate after QA
+Non-2011 year-specific reconstruction workflow,E3,Plausible,supported,Class I candidate,Proxy candidate after QA
+Non-2011 year-specific reconstruction workflow,E4,Explicit,supported,Class I candidate,Proxy candidate after QA
+Non-2011 year-specific reconstruction workflow,E5,Year-specific,supported,Class I candidate,Proxy candidate after QA
+Non-2011 year-specific reconstruction workflow,E6,Pending QA,conditional,Class I candidate,Proxy candidate after QA
+Non-2011 year-specific reconstruction workflow,E7,Object-year,supported,Class I candidate,Proxy candidate after QA
+Non-2011 year-specific reconstruction workflow,E8,Candidate,conditional,Class I candidate,Proxy candidate after QA

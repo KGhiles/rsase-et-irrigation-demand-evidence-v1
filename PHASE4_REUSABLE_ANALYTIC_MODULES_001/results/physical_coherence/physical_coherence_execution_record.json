@@ -1,0 +1,86 @@
+{
+  "authorized_inputs": {
+    "data/derived/physical_coherence/active_scene_fingerprint.csv": {
+      "sha256": "dfde37a117769aae69a79e89ebb8614a48236669cd6be36d1a2fdfe005e139ac"
+    },
+    "data/derived/physical_coherence/physical_coherence_scene_summary.csv": {
+      "sha256": "a604df5e443e0caacc210a91d4d7605fee5bbab0426904f37d8b0c882ef4f6f3"
+    },
+    "data/derived/physical_coherence/representative_scene_plot_ready.tif": {
+      "sha256": "a2bb65acf377f4d5bc3836563a654e71b4ec612a2ccb4ef46254f49191fdaea8"
+    },
+    "data/derived/physical_coherence/spatial_coherence_figure_source.csv": {
+      "sha256": "8b64dd0d493f804764c2b889627023e3c904b16cde7a06d76a48dd3f9585c5eb"
+    }
+  },
+  "command_template": [
+    "python",
+    "-m",
+    "qstable_awm.physical_coherence",
+    "--phase3-root",
+    "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "--output-dir",
+    "results/physical_coherence",
+    "--contract",
+    "config/phase4_source_contract.yml"
+  ],
+  "compact_raster_boundary": "The compact eight-band raster is opened only for metadata and visualization-contract validation; no authoritative area or connected-component statistic is derived from it.",
+  "contract_relative_path": "config/phase4_source_contract.yml",
+  "contract_sha256": "b701177f25c7c758e50880bbf63901ba95d0d1e4bc7dc03d7af4038e4e8ff725",
+  "derived_output_validation": {
+    "checks": 10,
+    "failed": 0,
+    "passed": 10,
+    "status": "PASS",
+    "warnings": 0
+  },
+  "determinism_note": "All numerical outputs derive only from the frozen V46C Phase 3 tables; the compact raster contributes metadata validation only.",
+  "figure_change": false,
+  "module": "physical_coherence",
+  "module_relative_path": "src/qstable_awm/physical_coherence.py",
+  "module_sha256": "ec36da70eb15b29296c1501da5c531b5e84fb92f5b355b885ce85f54858d7e05",
+  "outputs": {
+    "figure3_mechanism_source.csv": {
+      "sha256": "4fb159643008254bdf3826e6bab0458c2fa19c0b53eb71906077fb66de37910e",
+      "size_bytes": 5485
+    },
+    "figure3_scene_fingerprint_source.csv": {
+      "sha256": "eb032a4124a41adc8eca5988a49fb3f40b25cd12979b9952307fbd08b0c73c3d",
+      "size_bytes": 1296
+    },
+    "figure3_spatial_coherence_source.csv": {
+      "sha256": "416b1ef601c2544ea92e64308f983b45e42f16b90a2a1428acfe6bb1edc67862",
+      "size_bytes": 3369
+    },
+    "physical_coherence_text_statistics.csv": {
+      "sha256": "0a0637fe9f0c23740369edba347805c933e51d3121684a5848d8ad901625583b",
+      "size_bytes": 6683
+    },
+    "physical_coherence_validation.json": {
+      "sha256": "727ed643ce8ba2a9d78c4d69ca38414e83369ff452c155e543168fc24a449d7f",
+      "size_bytes": 2231
+    }
+  },
+  "phase3_package": "PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+  "record_version": "1.0.0",
+  "runtime_input_validation": {
+    "checks": 176,
+    "contract_path": "/mnt/data/qstable_phase4_work/PHASE4_REUSABLE_ANALYTIC_MODULES_001/config/phase4_source_contract.yml",
+    "failed": 0,
+    "modules": [
+      "physical_coherence"
+    ],
+    "passed": 176,
+    "phase3_root": "/mnt/data/qstable_phase4_work/PHASE3_CURATED_INPUT_LAYER_FINAL_002",
+    "report_version": "1.0.0",
+    "status": "PASS",
+    "warnings": 0
+  },
+  "scientific_boundary": "internal physical-coherence evidence only; no ET validation, corrected ET, irrigation, pumping, or groundwater-source inference",
+  "statistical_decisions": {
+    "basis": "eight targeted active-canopy 2011 scenes",
+    "ddof": 1,
+    "interpretation": "descriptive scene-to-scene spread, not product uncertainty",
+    "type": "sample standard deviation"
+  }
+}
