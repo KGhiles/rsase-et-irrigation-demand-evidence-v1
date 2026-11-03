@@ -33,6 +33,22 @@ that entire historical run is not independently confirmed by this report.
 Verification results are recorded in `QA_RESULTS.json`. The archive-wide hashes
 are stored in `SHA256SUMS.txt` and can be checked using `verify_release.py`.
 
+## PRISM and copyright attribution review (2026-11-03)
+
+The archived climate tables identify the Earth Engine PRISM collection as
+`OREGONSTATE/PRISM/ANd` and its precipitation band as `ppt`. The research
+team identified April 17, 2026 as the original data-access date. The source
+terms and Earth Engine catalog were reviewed on November 3, 2026. The
+access date is research-team reported, not verified from an acquisition log.
+
+The `LICENSE` file retains the proposed MIT copyright notice for Texas A&M
+AgriLife Research. The institutional name is correct, but the materials
+reviewed do not establish whether AgriLife Research or The Texas A&M University
+System holds legal title to this specific sponsored software. The notice was
+not changed without evidence from the rights holder. The intellectual-property
+office's favorable commercialization assessment is distinct from a formal
+determination of copyright ownership.
+
 ## Regression-test qualification
 
 The current limited run passed 432 tests before stopping at a historical

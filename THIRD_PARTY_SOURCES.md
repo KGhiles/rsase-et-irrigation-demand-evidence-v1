@@ -13,14 +13,17 @@ is authorized to license.
 | USDA NASS Cropland Data Layer | Annual corn classification, fixed-object crop support | USDA NASS considers CDL public domain and free to redistribute. Credit USDA NASS and the relevant product years. https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php |
 | NASA NLDAS | Image-date meteorological forcing | Cite the NASA NLDAS dataset used for forcing; no raw NLDAS product is included. https://ldas.gsfc.nasa.gov/nldas/nldas-get-data |
 | gridMET | Daily alfalfa-reference ET forcing | gridMET is released with a public-domain dedication. Credit the gridMET project. https://www.climatologylab.org/gridmet.html |
-| PRISM Group, Oregon State University | Daily precipitation used in monthly effective-precipitation accounting | PRISM permits reproduction and distribution but retains ownership and requires clear source credit, its URL and the date of original data access. https://prism.oregonstate.edu/terms/ |
+| PRISM Group, Oregon State University | Daily precipitation (`ppt` band) from Earth Engine `OREGONSTATE/PRISM/ANd`; aggregated for monthly effective-precipitation accounting | PRISM permits redistribution and retains ownership. Credit the PRISM Group and record the source access date. Terms: https://prism.oregonstate.edu/terms/ ; Earth Engine collection: https://developers.google.com/earth-engine/datasets/catalog/OREGONSTATE_PRISM_ANd |
 | U.S. Census Bureau TIGER/Line | County analysis boundaries | U.S. Census Bureau geographical boundaries are publicly distributed and not legal descriptions of ownership. https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html |
 
-**PRISM access-date record:** The curated release identifies the PRISM dataset
-but does not contain a verified original download/access date. The research
-team must supply the historical access date from its acquisition log before
-public release. Do not substitute the date of this licensing audit for that
-historical date.
+## PRISM provenance
+
+- **Provider:** PRISM Group, Oregon State University.
+- **Source used:** Google Earth Engine collection `OREGONSTATE/PRISM/ANd`, band `ppt` (daily precipitation, mm). The source identifier appears in the archived climate-context CSVs and the original processing notebook.
+- **Study years:** 2011, 2015, 2017 and 2023; daily precipitation was aggregated for monthly effective-precipitation accounting.
+- **Original PRISM data access date:** **April 17, 2026** (reported by the research team; not independently established by retained acquisition logs).
+- **Source documentation checked:** November 3, 2026 (PRISM provider terms and the Google Earth Engine dataset catalog). This review date is distinct from the April 17, 2026 data-access date.
+- **Required attribution:** PRISM Group, Oregon State University (https://prism.oregonstate.edu), daily precipitation from `OREGONSTATE/PRISM/ANd` (band `ppt`), accessed April 17, 2026. PRISM retains ownership of its data; the project's CC BY 4.0 statement does not relicense them.
 
 ## Object-level location data
 

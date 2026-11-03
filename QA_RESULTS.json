@@ -49,8 +49,22 @@
   "license_status": {
     "software": "MIT file included",
     "original_derived_material": "CC BY 4.0 terms included",
-    "remaining": "confirm rights holder, original PRISM access date, and coauthor public-distribution approval"
+    "remaining": "confirm copyright rights holder and coauthor public-distribution approval"
   },
   "upstream_regeneration": "NOT_INCLUDED; see DATA_AND_REPOSITORY_LIMITS.md",
-  "archive_status": "ZIP_CRC_AND_FRESH_EXTRACTION_CHECKSUM_PASS"
+  "archive_status": "ZIP_CRC_AND_FRESH_EXTRACTION_CHECKSUM_PASS",
+  "provenance_review": {
+    "review_date_utc": "2026-11-03",
+    "prism_provider": "PRISM Group, Oregon State University",
+    "prism_distribution": "Google Earth Engine",
+    "prism_collection": "OREGONSTATE/PRISM/ANd",
+    "prism_band": "ppt",
+    "original_data_access_date": "2026-04-17",
+    "provider_terms_checked": true,
+    "mit_notice_present": true,
+    "software_copyright_notice": "Copyright (c) 2026 Texas A&M AgriLife Research",
+    "legal_rights_holder_confirmed": false,
+    "scientific_data_or_python_code_changed": false,
+    "original_data_access_date_basis": "Research-team reported on 2026-11-03; acquisition log not independently available in this curated release"
+  }
 }
