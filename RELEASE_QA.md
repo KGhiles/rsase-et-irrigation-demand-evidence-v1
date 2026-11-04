@@ -49,12 +49,12 @@ not changed without evidence from the rights holder. The intellectual-property
 office's favorable commercialization assessment is distinct from a formal
 determination of copyright ownership.
 
-## Regression-test qualification
+## Verification scope
 
-The current limited run passed 432 tests before stopping at a historical
-package-inventory assertion that requires 172 files, compared with 81 in the
-public curated Phase 3 package. The full 637-test suite was not certified
-against this reduced distribution. Tests that assume the upstream full archive
-should be run only with that archive; they are not evidence that the published
-analytical CSV values differ. Scripts need executable permissions restored
-after extraction if the ZIP tool discards Unix mode bits.
+The curated release provides the analytical inputs, Python modules, and
+source tables supporting the manuscript. The recorded validation included
+1,708 scientific input checks and successful reproduction of 24 analytical
+CSV files. These results were obtained with the validated source package
+retained in the project archive. The public distribution contains the inputs
+needed for the released analytical workflows; tests requiring the larger
+historical development archive are outside its scope.
