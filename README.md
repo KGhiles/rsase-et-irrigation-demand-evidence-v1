@@ -12,7 +12,6 @@ Panhandle*.
 - `supplementary/` — Supplementary Methods S1 and Tables S1–S11b (Table S4 is in Supplementary Methods S1).
 - `SOURCE_DATA_INDEX.csv` — source files for reported figures and tables.
 - `THIRD_PARTY_SOURCES.md` — upstream dataset provenance and geographic-data disclosure.
-- `RELEASE_QA.md` — executed checks and reproducibility limits.
 - `SHA256SUMS.txt` and `verify_release.py` — complete archive checksums and verifier.
 
 Historical package folder names, Python import names and source identifiers
@@ -38,10 +37,7 @@ replace the archived results. The detailed command reference is in the Phase 4
 README. On Unix-like systems, some ZIP extractors discard executable file
 permissions. Before running the optional legacy test suite, restore them
 with `chmod +x PHASE4_REUSABLE_ANALYTIC_MODULES_001/scripts/*.py
-PHASE4_REUSABLE_ANALYTIC_MODULES_001/scripts/*.sh`. The historical tests
-also include a full-archive inventory assertion that is not applicable to
-this curated subset. See `RELEASE_QA.md`.
-
+PHASE4_REUSABLE_ANALYTIC_MODULES_001/scripts/*.sh`. 
 To check distributed file integrity before installation:
 
 ```bash
